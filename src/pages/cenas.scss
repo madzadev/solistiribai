@@ -1,0 +1,9 @@
+.prices-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+.prices-title {
+  margin-bottom: 20px;
+}

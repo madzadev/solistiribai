@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // border: 1px solid red;
+  // border-bottom: 1px solid #0b4f6c;
+  // color: #020202;
+  // background-color: #f7f7f7;
+  padding: 10px;
+}
+
+.navbar-link {
+  font-family: "Montserrat", sans-serif;
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(36, 36, 36);
+}
+
+.navbar-link-active {
+  color: rgb(0, 192, 58);
+}
+
+.navbar-link:hover {
+  color: rgb(0, 192, 58);
+}
+
+.logo-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 10px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.navbar-logo {
+  // margin: 10px;
+  // padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 26px;
+  font-weight: 700;
+}

@@ -1,0 +1,27 @@
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  place-items: center;
+
+  @media screen and (max-width: 865px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.aboutImg {
+  width: 350px;
+  // border: 1px solid rgb(0, 100, 8);
+  // border-radius: 50%;
+}
+
+.about-title {
+  margin-bottom: 20px;
+}
+
+.about-reason {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  // place-items: start;
+  align-items: center;
+}

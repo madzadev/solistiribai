@@ -1,0 +1,35 @@
+.services-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px;
+  column-gap: 30px;
+  row-gap: 30px;
+
+  place-items: center;
+}
+
+.services-box {
+  // border: 1px solid grey;
+  // box-sizing: border-box;
+  padding: 10px;
+
+  // background-color: rgb(238, 238, 238);
+  // border-radius: 20px;
+}
+
+.services-img {
+  width: 300px;
+  height: 150px;
+  // margin-bottom: 10px;
+  // border-radius: 10px;
+  // border: 1px solid green;
+}
+
+.services-img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.services-title {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+.contacts-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 40px;
+
+  @media screen and (max-width: 865px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contacts-title {
+  margin-bottom: 20px;
+}
+
+.whatsapp-wrapper {
+  width: 100%;
+  height: 50px;
+  // background-color: #20bf55;
+  // color: white;
+  border-radius: 20px;
+  // padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 12fr;
+  column-gap: 10px;
+  // padding: 0 10px;
+  font-size: 18px;
+  align-items: center;
+}
+
+.whatsapp-img:hover {
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.whatsapp-link {
+  text-decoration: none;
+  // color: white;
+}
+
+.sazinai-wrapper {
+  margin-bottom: 50px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 30px;
+  //   border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(240, 240, 240);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+}
+textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: rgb(240, 240, 240);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.contact-btn {
+  font-family: "Quicksand", sans-serif;
+  width: 200px;
+  height: 50px;
+  float: right;
+  background-color: #20bf55;
+  color: white;
+  border-radius: 20px;
+  font-size: 18px;
+  border: none;
+}
+
+.contact-btn:hover {
+  cursor: pointer;
+  background-color: #239e4c;
+}

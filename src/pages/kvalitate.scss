@@ -1,0 +1,7 @@
+.gallery-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px;
+  column-gap: 30px;
+  place-items: center;
+}

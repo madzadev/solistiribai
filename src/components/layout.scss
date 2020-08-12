@@ -1,0 +1,27 @@
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+.page-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  // border: 1px solid rgb(102, 102, 102);
+  min-height: 100vh;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  // font-family: "Varela Round", sans-serif;
+  font-weight: 200;
+  // background-color: rgb(112, 174, 255);
+  background-color: white;
+  // margin-top: 40px;
+  // border-radius: 30px;
+  // color: rgb(71, 15, 128);
+}
+
+.content-wrapper {
+  margin-top: 30px;
+  padding: 40px;
+  // border: 1px solid green;
+  // color: red;
+}
