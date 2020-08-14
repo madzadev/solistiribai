@@ -13,7 +13,7 @@ const aboutUsPage = () => {
     <Layout>
       <div className="about-content">
         <div className="about-why">
-          <h1 className="about-title">Kāpēc izvēlēties Solis Tīrībai?</h1>
+          <h1 className="about-title">Kāpēc izvēlēties mūs?</h1>
           <div className="about-reason">
             <img src={Tick} alt="" />
             <p>Veicam ķīmisko un mitro tīrīšanu</p>
