@@ -6,6 +6,14 @@
   row-gap: 30px;
 
   place-items: center;
+
+  @media screen and (max-width: 1116px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 865px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .services-box {
