@@ -32,8 +32,8 @@ const homePage = () => {
             Pieteikt tīrīšanu →
           </Link>
         </div>
-        <div>
-          <img src={image} alt="img" />
+        <div className="hero-img-panel">
+          <img src={image} className="hero-img" alt="img" />
           {/* <SlideShow /> */}
         </div>
       </div>

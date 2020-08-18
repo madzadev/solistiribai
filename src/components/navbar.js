@@ -30,6 +30,7 @@ const NavBar = () => {
         </p>
       </span> */}
       <div>
+        <Link className="navbar-link hiding">Scroll</Link>
         <Link
           className="navbar-link"
           activeClassName="navbar-link-active"
