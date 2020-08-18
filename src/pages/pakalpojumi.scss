@@ -11,7 +11,7 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  @media screen and (max-width: 865px) {
+  @media screen and (max-width: 765px) {
     grid-template-columns: 1fr;
   }
 }
@@ -20,17 +20,23 @@
   // border: 1px solid grey;
   // box-sizing: border-box;
   padding: 10px;
+  text-align: center;
 
   // background-color: rgb(238, 238, 238);
   // border-radius: 20px;
 }
 
 .services-img {
-  width: 300px;
-  height: 150px;
+  width: 90%;
+  height: 180px;
+  object-fit: cover;
   // margin-bottom: 10px;
   // border-radius: 10px;
   // border: 1px solid green;
+  @media screen and (max-width: 370px) {
+    width: 100%;
+    // object-fit: fill;
+  }
 }
 
 .services-img:hover {

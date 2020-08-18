@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  // border: 1px solid red;
   // border-bottom: 1px solid #0b4f6c;
   // color: #020202;
   // background-color: #f7f7f7;
@@ -34,21 +34,12 @@
   font-family: "Rajdhani", sans-serif;
 }
 
-.navbar-logo {
-  // margin: 10px;
-  // padding: 10px;
-  font-size: 18px;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 26px;
-  font-weight: 700;
-}
 // Link that should open on small screens
 .hiding {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .navbar-link:not(:first-child) {
     display: none;
   }

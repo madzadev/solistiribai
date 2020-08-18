@@ -1,10 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import navLogo from "./../images/mop.png"
 
 import "./navbar.scss"
 
 const NavBar = () => {
+  let [openState, setOpenState] = useState(false)
+
+  const onClickHandler = () => {
+    setOpenState(!openState)
+  }
+
   return (
     <nav className="navbar-wrapper">
       <div className="logo-wrapper">
@@ -13,7 +19,10 @@ const NavBar = () => {
             <img
               src={navLogo}
               alt="icon"
-              style={{ width: "60px", overflow: "hidden" }}
+              style={{
+                width: "50px",
+                overflow: "hidden",
+              }}
             />
           </span>
         </Link>
@@ -30,7 +39,9 @@ const NavBar = () => {
         </p>
       </span> */}
       <div>
-        <Link className="navbar-link hiding">Scroll</Link>
+        <Link className="navbar-link hiding" onClick={onClickHandler}>
+          Scroll
+        </Link>
         <Link
           className="navbar-link"
           activeClassName="navbar-link-active"

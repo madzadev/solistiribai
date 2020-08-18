@@ -45,7 +45,7 @@ const contactsPage = () => {
                   className="whatsapp-link"
                   href="https://www.facebook.com/solis.tiribai/"
                 >
-                  Raksti mums Facebook
+                  Seko mums Facebook
                 </a>
               </p>
             </div>
