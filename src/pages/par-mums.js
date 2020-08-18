@@ -4,7 +4,6 @@ import "./par-mums.scss"
 import Tick from "./../images/tick.png"
 import Truck from "./../images/truck.png"
 import People from "./../images/people.png"
-import TestimonialCard from "./../components/testimonial"
 
 import aboutImage from "./../images/cleaner-girl.png"
 
@@ -63,14 +62,14 @@ const aboutUsPage = () => {
 
       <br />
 
-      {/* <h1 className="about-title">Solis Tīrībai atsauksmes:</h1>
-      <TestimonialCard />
+      <h1 className="about-title">Solis Tīrībai klienti:</h1>
+      {/* <TestimonialCard /> */}
       <p>
-        🔸 privātpersonas, 🔸bērnudārzi; - 🔸restorāni; - 🔸banketu zāles; -
-        🔸internātskolas; - 🔸skolas; - 🔸frizētavas; - 🔸skaistumkopšanas
-        saloni; - 🔸fitnesa centri; - 🔸pirtis; - 🔸autoservisi; - 🔸viesnīcas;
-        - 🔸viesu nami u.c.
-      </p> */}
+        🔸 privātpersonas; - 🔸restorāni; - 🔸banketu zāles; - 🔸internātskolas;
+        - 🔸skolas; - 🔸frizētavas; - 🔸skaistumkopšanas saloni; - 🔸fitnesa
+        centri; - 🔸autoservisi; - 🔸viesnīcas; - 🔸bērnudārzi; - 🔸viesu nami
+        u.c.
+      </p>
     </Layout>
   )
 }
