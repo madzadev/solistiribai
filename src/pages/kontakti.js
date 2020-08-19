@@ -19,7 +19,7 @@ const contactsPage = () => {
           <h1 className="contacts-title">Mūsu kontakti</h1>
           <div className="sazinai-wrapper">
             <p>
-              E-pasts:
+              E-pasts:{" "}
               <a href="mailto: solis.tiribai@gmail.com">
                 solis.tiribai@gmail.com
               </a>

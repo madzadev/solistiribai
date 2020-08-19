@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import navLogo from "./../images/mop.png"
+import navToggle from "./../images/navbar/hamburger.png"
 
 import "./navbar.scss"
 
@@ -45,7 +46,7 @@ const NavBar = () => {
           className={openState ? "navbar-link opened" : "navbar-link hiding"}
           onClick={onClickHandler}
         >
-          Izvēlne {openState}
+          <img src={navToggle} alt="navToggle" style={{ width: "30px" }} />
         </Link>
         <Link
           className={openState ? "navbar-link opened" : "navbar-link"}
