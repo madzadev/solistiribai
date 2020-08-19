@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: minmax(450px, 800px) minmax(200px, 500px);
   column-gap: 40px;
-  height: 300px;
+  // height: 300px;
 }
 
 .hero-title {
@@ -69,10 +69,6 @@
     // width: 50%;
     // float: right;
     display: none;
-  }
-
-  .hero-img-panel {
-    // display: none;
   }
 
   .hero-content {

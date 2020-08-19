@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "./../components/layout"
-import image from "./../images/hero-img.png"
+// import image from "./../images/hero-img.png"
 // import Slideshow from "./../components/slideshow"
 
 import "./index.scss"
@@ -17,7 +17,7 @@ const homePage = () => {
           </h1>
 
           <p className="hero-description">
-            Īstā izvēle, lai Jums apkārt atkal atgrieztos tīrība un svaigums!
+            Īstā izvēle, lai Jums apkārt atgrieztos tīrība un svaigums!
           </p>
           <p className="hero-description">
             Garantējam izpildītā darba kvalitāti!
@@ -32,7 +32,7 @@ const homePage = () => {
           </p>
         </div>
         <div className="hero-img-panel">
-          <img src={image} className="hero-img" alt="img" />
+          {/* <img src={image} className="hero-img" alt="img" /> */}
           {/* <SlideShow /> */}
         </div>
       </div>

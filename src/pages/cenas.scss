@@ -8,25 +8,33 @@
   margin-bottom: 20px;
 }
 
+.prices-card-box {
+  text-align: center;
+}
+
 .prices-card-title {
   background-color: rgb(224, 224, 224);
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .prices-card-amount {
-  padding: 30px;
+  padding: 30px 0;
   font-size: 38px;
   background-color: rgb(240, 240, 240);
 }
 
 .prices-card-description {
-  padding: 10px;
+  padding: 10px 0;
   background-color: rgb(247, 247, 247);
   font-size: 20px;
 }
 
 .prices-card-discount {
-  padding: 10px;
+  padding: 10px 0;
   background-color: rgb(222, 252, 152);
   font-size: 20px;
 }
+
+// .prices-notes {
+//   color: red;
+// }

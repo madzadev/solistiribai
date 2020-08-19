@@ -2,8 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import "./par-mums.scss"
 import Tick from "./../images/tick.png"
-import Truck from "./../images/truck.png"
-import People from "./../images/people.png"
 
 import aboutImage from "./../images/cleaner-girl.png"
 
@@ -56,7 +54,7 @@ const aboutUsPage = () => {
           </div> */}
         </div>
         <div className="about-image">
-          <img className="aboutImg" src={aboutImage} alt="img" />
+          {/* <img className="aboutImg" src={aboutImage} alt="img" /> */}
         </div>
       </div>
 

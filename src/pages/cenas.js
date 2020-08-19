@@ -8,20 +8,20 @@ const pricesPage = () => {
     <Layout>
       <h1 className="prices-title">Izcenojumi:</h1>
       <div className="prices-content">
-        <div>
+        <div className="prices-card-box">
           <h3 className="prices-card-title">Krēslu tīrīšana</h3>
           <h1 className="prices-card-amount">2.50€ - 5€</h1>
           <h1 className="prices-card-description">par vienību</h1>
           <h1 className="prices-card-discount">20% atlaide no 20 gab.</h1>
         </div>
-        <div>
-          <h3 className="prices-card-title">Dīvāna, matraču tīrīšana</h3>
+        <div className="prices-card-box">
+          <h3 className="prices-card-title">Dīvānu, matraču tīrīšana</h3>
           <h1 className="prices-card-amount">20€ - 65€</h1>
           <h1 className="prices-card-description">viss dīvāns/matracis</h1>
           <h1 className="prices-card-amount">vai 9€ - 15€</h1>
           <h1 className="prices-card-description">par sēdvietu</h1>
         </div>
-        <div>
+        <div className="prices-card-box">
           <h3 className="prices-card-title">
             Paklāju ķīmiskā vai mitrā tīrīšana
           </h3>
@@ -31,10 +31,12 @@ const pricesPage = () => {
       </div>
 
       <br />
-      <p>*Lai uzzinātu precīzākas cenas-nosūti foto!</p>
-      <p>
-        *Cenas atkarīgas no auduma materiāla un tīrības pakāpes, tādēļ ir ļooti
-        atšķirīgas*
+      <p className="prices-notes">
+        *Lai uzzinātu precīzākas cenas - sazinies ar mums!
+      </p>
+      <p className="prices-notes">
+        *Cenas atkarīgas no auduma materiāla un tīrības pakāpes, tādēļ ir
+        atšķirīgas.
       </p>
     </Layout>
   )
