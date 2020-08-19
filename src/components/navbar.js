@@ -8,6 +8,7 @@ const NavBar = () => {
   let [openState, setOpenState] = useState(false)
 
   const onClickHandler = () => {
+    console.log("Clicked")
     setOpenState(!openState)
   }
 
@@ -39,39 +40,43 @@ const NavBar = () => {
         </p>
       </span> */}
       <div>
-        <Link className="navbar-link hiding" onClick={onClickHandler}>
-          Scroll
+        <Link
+          to="#"
+          className={openState ? "navbar-link opened" : "navbar-link hiding"}
+          onClick={onClickHandler}
+        >
+          Izvēlne {openState}
         </Link>
         <Link
-          className="navbar-link"
+          className={openState ? "navbar-link opened" : "navbar-link"}
           activeClassName="navbar-link-active"
           to="/par-mums"
         >
           Par mums
         </Link>
         <Link
-          className="navbar-link"
+          className={openState ? "navbar-link opened" : "navbar-link"}
           activeClassName="navbar-link-active"
           to="/pakalpojumi"
         >
           Pakalpojumi
         </Link>
         <Link
-          className="navbar-link"
+          className={openState ? "navbar-link opened" : "navbar-link"}
           activeClassName="navbar-link-active"
           to="/cenas"
         >
           Cenas
         </Link>
         <Link
-          className="navbar-link"
+          className={openState ? "navbar-link opened" : "navbar-link"}
           activeClassName="navbar-link-active"
           to="/kvalitate"
         >
           Kvalitāte
         </Link>
         <Link
-          className="navbar-link"
+          className={openState ? "navbar-link opened" : "navbar-link"}
           activeClassName="navbar-link-active"
           to="/kontakti"
         >

@@ -39,8 +39,14 @@
   display: none;
 }
 
+.opened {
+  // color: red;
+  display: block;
+  background-color: rgb(230, 230, 230);
+}
+
 @media screen and (max-width: 720px) {
-  .navbar-link:not(:first-child) {
+  .navbar-link:not(:first-child):not(.opened) {
     display: none;
   }
 
