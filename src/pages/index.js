@@ -16,27 +16,32 @@ const homePage = () => {
             tīrīšana
           </h1>
 
-          <p>
+          <p className="hero-description">
             Īstā izvēle, lai Jums apkārt atkal atgrieztos tīrība un svaigums!
           </p>
-          <p>Garantējam izpildītā darba kvalitāti!</p>
+          <p className="hero-description">
+            Garantējam izpildītā darba kvalitāti!
+          </p>
 
           <br />
-          <p>Sadarbojamies ar privātpersonām un uzņēmumiem</p>
-          <p>Nodrošinām izbraukšanu pie klienta dzīvesvietā</p>
-
-          <Link to="/par-mums" className="hero-btn first">
-            Uzzināt vairāk
-          </Link>
-          <Link to="/kontakti" className="hero-btn">
-            Pieteikt tīrīšanu →
-          </Link>
+          <p className="hero-description">
+            Sadarbojamies ar privātpersonām un uzņēmumiem
+          </p>
+          <p className="hero-description">
+            Nodrošinām izbraukšanu pie klienta dzīvesvietā
+          </p>
         </div>
         <div className="hero-img-panel">
           <img src={image} className="hero-img" alt="img" />
           {/* <SlideShow /> */}
         </div>
       </div>
+      <Link to="/par-mums" className="hero-btn first">
+        Uzzināt vairāk
+      </Link>
+      <Link to="/kontakti" className="hero-btn">
+        Pieteikt tīrīšanu →
+      </Link>
     </Layout>
   )
 }
