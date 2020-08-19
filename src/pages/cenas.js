@@ -9,24 +9,24 @@ const pricesPage = () => {
       <h1 className="prices-title">Izcenojumi:</h1>
       <div className="prices-content">
         <div>
-          <h3 style={{ backgroundColor: "lightgrey", padding: "10px" }}>
-            Krēslu tīrīšana
-          </h3>
-          <h1>2.50€ - 5€ par vienību</h1>
-          <h1>20% atlaide no 20 gab.</h1>
+          <h3 className="prices-card-title">Krēslu tīrīšana</h3>
+          <h1 className="prices-card-amount">2.50€ - 5€</h1>
+          <h1 className="prices-card-description">par vienību</h1>
+          <h1 className="prices-card-discount">20% atlaide no 20 gab.</h1>
         </div>
         <div>
-          <h4 style={{ backgroundColor: "lightgrey" }}>
-            Dīvāna, matraču tīrīšana
-          </h4>
-          <h1>20€ - 65€.</h1>
-          <h1>vai 9€ - 15€ (par sēdvietu)</h1>
+          <h3 className="prices-card-title">Dīvāna, matraču tīrīšana</h3>
+          <h1 className="prices-card-amount">20€ - 65€</h1>
+          <h1 className="prices-card-description">viss dīvāns/matracis</h1>
+          <h1 className="prices-card-amount">vai 9€ - 15€</h1>
+          <h1 className="prices-card-description">par sēdvietu</h1>
         </div>
         <div>
-          <h4 style={{ backgroundColor: "lightgrey" }}>
+          <h3 className="prices-card-title">
             Paklāju ķīmiskā vai mitrā tīrīšana
-          </h4>
-          <h1>1.50€ - 6€ m2</h1>
+          </h3>
+          <h1 className="prices-card-amount">1.50€ - 6€</h1>
+          <h1 className="prices-card-description">par m2</h1>
         </div>
       </div>
 
