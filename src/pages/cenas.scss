@@ -35,6 +35,13 @@
   font-size: 20px;
 }
 
+@media screen and (max-width: 800px) {
+  .prices-content {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
 // .prices-notes {
 //   color: red;
 // }

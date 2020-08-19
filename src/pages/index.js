@@ -12,7 +12,7 @@ const homePage = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Solis Tīrībai</title>
+        <title>Sākums | Solis Tīrībai</title>
       </Helmet>
 
       <div className="hero-content">

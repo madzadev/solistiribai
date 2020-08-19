@@ -40,7 +40,7 @@ const NavBar = () => {
           <a href="mailto: solis.tiribai@gmail.com">solis.tiribai@gmail.com</a>
         </p>
       </span> */}
-      <div>
+      <div className={openState ? "navbar-link-wrapper" : ""}>
         <Link
           to="#"
           className={openState ? "navbar-link opened" : "navbar-link hiding"}
