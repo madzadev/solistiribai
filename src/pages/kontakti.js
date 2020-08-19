@@ -1,14 +1,19 @@
 import React from "react"
+import Helmet from "react-helmet"
+
 import Layout from "./../components/layout"
+import "./kontakti.scss"
 
 import WhatsApp from "./../images/contacts/whatsapp.png"
 import Facebook from "./../images/contacts/facebook.png"
 
-import "./kontakti.scss"
-
 const contactsPage = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Kontakti | Solis Tīrībai</title>
+      </Helmet>
+
       <div className="contacts-content">
         <div>
           <h1 className="contacts-title">Mūsu kontakti</h1>

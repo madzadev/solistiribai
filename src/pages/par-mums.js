@@ -1,4 +1,6 @@
 import React from "react"
+import Helmet from "react-helmet"
+
 import Layout from "../components/layout"
 import "./par-mums.scss"
 import Tick from "./../images/tick.png"
@@ -8,6 +10,10 @@ import aboutImage from "./../images/cleaner-girl.png"
 const aboutUsPage = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Par mums | Solis Tīrībai</title>
+      </Helmet>
+
       <div className="about-content">
         <div className="about-why">
           <h1 className="about-title">Kāpēc izvēlēties mūs?</h1>

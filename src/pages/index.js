@@ -1,14 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
+import Helmet from "react-helmet"
+
 import Layout from "./../components/layout"
+import "./index.scss"
+
 // import image from "./../images/hero-img.png"
 // import Slideshow from "./../components/slideshow"
-
-import "./index.scss"
 
 const homePage = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Solis Tīrībai</title>
+      </Helmet>
+
       <div className="hero-content">
         <div>
           <h1 className="hero-title">

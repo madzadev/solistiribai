@@ -1,11 +1,16 @@
 import React from "react"
-import Layout from "../components/layout"
+import Helmet from "react-helmet"
 
+import Layout from "../components/layout"
 import "./kvalitate.scss"
 
 const galleryPage = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Kvalitāte | Solis Tīrībai</title>
+      </Helmet>
+
       <h1>Paveiktie darbi:</h1>
       <div className="gallery-content">
         <div className="quality-box">

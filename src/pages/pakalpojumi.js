@@ -1,5 +1,8 @@
 import React from "react"
+import Helmet from "react-helmet"
+
 import Layout from "./../components/layout"
+import "./pakalpojumi.scss"
 
 import SofaCleaning from "./../images/services/sofa-cleaning.jpg"
 import CarpetCleaning from "./../images/services/carpet-cleaning.jpg"
@@ -8,11 +11,13 @@ import MatressCleaning from "./../images/services/mattress-cleaning.jpg"
 import CarSeatCleaning from "./../images/services/car-seat-cleaning.jpg"
 import OverallCleaning from "./../images/services/overall-cleaning.jpg"
 
-import "./pakalpojumi.scss"
-
 const servicesPage = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Pakalpojumi | Solis Tīrībai</title>
+      </Helmet>
+
       <h1 className="services-title">Mūsu pakalpojumi:</h1>
       <div className="services-content">
         <div className="services-box">

@@ -1,11 +1,16 @@
 import React from "react"
-import Layout from "./../components/layout"
+import Helmet from "react-helmet"
 
+import Layout from "./../components/layout"
 import "./cenas.scss"
 
 const pricesPage = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Cenas | Solis Tīrībai</title>
+      </Helmet>
+
       <h1 className="prices-title">Izcenojumi:</h1>
       <div className="prices-content">
         <div className="prices-card-box">
