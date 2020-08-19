@@ -12,8 +12,8 @@
 
 .navbar-link-wrapper {
   position: absolute;
-  right: 0;
-  top: 0px;
+  right: 10px;
+  top: 10px;
 }
 
 .navbar-link {
@@ -49,6 +49,7 @@
   // color: red;
   display: block;
   background-color: rgb(230, 230, 230);
+  text-align: end;
 }
 
 @media screen and (max-width: 720px) {
