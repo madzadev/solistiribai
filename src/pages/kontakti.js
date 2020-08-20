@@ -25,9 +25,10 @@ const contactsPage = () => {
               </a>
             </p>
             <br />
-            <p>Telefons: (+371) 26 364 882</p>
+            <p>
+              Telefons: <a href="tel:+37126364882">(+371) 26 364 882</a>
+            </p>
             <br />
-            {/* <h3>Nosūti foto WhatsApp un uzzini cenu!</h3> */}
             <div className="whatsapp-wrapper">
               <a href="https://api.whatsapp.com/send?phone=37127316899">
                 <img className="whatsapp-img" src={WhatsApp} alt="img" />
@@ -54,18 +55,7 @@ const contactsPage = () => {
                 </a>
               </p>
             </div>
-
-            {/* <h3>Rakstīt mums Facebook</h3>
-            <p>Parasti atbildam pāris stundu laikā</p> */}
-            {/* <FBGroup /> */}
           </div>
-
-          {/* <h1 className="contacts-title">Darba laiks</h1>
-          <p>Mēs sniedzam individuālu pieeju katram klientam.</p>
-          <p>
-            Pakalpojumu sniegšanas laiks tiek saskaņots ar katru klientu
-            atsevišķi.
-          </p> */}
         </div>
         <div>
           <h1 className="contacts-title">Nosūtīt e-pastu</h1>
