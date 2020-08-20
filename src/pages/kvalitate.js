@@ -21,7 +21,7 @@ const galleryPage = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Kvalitāte | Solis Tīrībai</title>
+        <title>Pirms un Pēc | Solis Tīrībai</title>
       </Helmet>
       {/* 1 divans, 2 paklajs sedeklis gulta kresls divans */}
       <h1 className="quality-title">Paveiktais:</h1>
@@ -64,14 +64,6 @@ const galleryPage = () => {
         </div>
         <div className="quality-box">
           <img className="quality-img" src={ChairAfter} alt="img" />
-          <h3>Pēc</h3>
-        </div>
-        <div className="quality-box">
-          <img className="quality-img" src={SeatBefore} alt="img" />
-          <h3>Pirms</h3>
-        </div>
-        <div className="quality-box">
-          <img className="quality-img" src={SeatAfter} alt="img" />
           <h3>Pēc</h3>
         </div>
         <div className="quality-box">

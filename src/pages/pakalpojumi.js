@@ -1,7 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 
-import Layout from "./../components/layout"
+import Layout from "../components/layout"
 import "./pakalpojumi.scss"
 
 import SofaCleaning from "./../images/services/sofa-cleaning.jpg"
