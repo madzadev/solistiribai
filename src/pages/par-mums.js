@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import "./par-mums.scss"
 import Tick from "./../images/tick.png"
 
-import aboutImage from "./../images/cleaner-girl.png"
+// import aboutImage from "./../images/cleaner-girl.png"
 
 const aboutUsPage = () => {
   return (
