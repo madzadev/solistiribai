@@ -24,10 +24,8 @@
 .services-img {
   width: 90%;
   height: 180px;
+  border-radius: 10px;
   object-fit: cover;
-  // margin-bottom: 10px;
-  // border-radius: 10px;
-  // border: 1px solid green;
   @media screen and (max-width: 370px) {
     width: 100%;
   }

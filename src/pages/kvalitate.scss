@@ -16,6 +16,7 @@
 .quality-img {
   width: 80%;
   height: 180px;
+  border-radius: 10px;
   object-fit: cover;
   &:hover {
     cursor: pointer;
@@ -40,6 +41,11 @@
 }
 
 @media screen and (max-width: 550px) {
+  .quality-box {
+    padding: 0px;
+    width: 100%;
+  }
+
   .quality-img {
     width: 100%;
   }
