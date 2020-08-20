@@ -11,7 +11,7 @@ const galleryPage = () => {
         <title>Kvalitāte | Solis Tīrībai</title>
       </Helmet>
 
-      <h1>Paveiktie darbi:</h1>
+      <h1 className="quality-title">Paveiktie darbi:</h1>
       <div className="gallery-content">
         <div className="quality-box">
           <img

@@ -95,3 +95,9 @@ textarea {
   cursor: pointer;
   background-color: #239e4c;
 }
+
+@media screen and (max-width: 540px) {
+  .contact-required {
+    margin-bottom: 20px;
+  }
+}

@@ -82,10 +82,9 @@ const contactsPage = () => {
             <label htmlFor="name">Jūsu ziņa*</label>
             <textarea type="text" />
 
+            <p className="contact-required">*Obligāti aizpildāmie lauki</p>
             <button className="contact-btn">Nosūtīt →</button>
           </form>
-
-          <p>*Obligāti aizpildāmie lauki</p>
         </div>
       </div>
     </Layout>

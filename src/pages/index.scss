@@ -23,6 +23,7 @@
   border-radius: 20px;
   margin: 10px;
   font-size: 18px;
+  // font-weight: 600;
   // padding: 10px;
   align-items: center;
 
@@ -34,11 +35,13 @@
   color: white;
   margin-top: 40px;
   // border: 2px solid green;
+  transition: transform 0.2s;
 }
 
 .hero-btn:hover {
   background-color: #239e4c;
   color: white;
+  transform: scale(1.01);
 }
 //! Edit this
 .first {
