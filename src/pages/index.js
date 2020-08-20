@@ -22,19 +22,19 @@ const homePage = () => {
             tīrīšana
           </h1>
 
-          <p className="hero-description">
+          <h3 className="hero-description-">
             Īstā izvēle, lai Jums apkārt atgrieztos tīrība un svaigums!
-          </p>
-          <p className="hero-description">
+          </h3>
+          {/* <p className="hero-description">
             Garantējam izpildītā darba kvalitāti!
-          </p>
+          </p> */}
 
           <br />
           <p className="hero-description">
-            Sadarbojamies ar privātpersonām un uzņēmumiem
+            Sadarbojamies ar privātpersonām un uzņēmumiem!
           </p>
           <p className="hero-description">
-            Nodrošinām izbraukšanu pie klienta dzīvesvietā
+            Nodrošinām izbraukšanu pie klienta dzīvesvietā!
           </p>
         </div>
         <div className="hero-img-panel">
