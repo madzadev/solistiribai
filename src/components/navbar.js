@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import navLogo from "./../images/mop.png"
+import navLogo from "./../images/navbar/logo6.png"
 import navToggle from "./../images/navbar/hamburger.png"
 
 import "./navbar.scss"
@@ -15,24 +15,28 @@ const NavBar = () => {
 
   return (
     <nav className="navbar-wrapper">
-      <div className="logo-wrapper">
-        <Link style={{ float: "left" }} className="navbar-logo" to="/">
+      <Link
+        style={{ float: "left", textDecoration: "none" }}
+        className="navbar-logo"
+        to="/"
+      >
+        <div className="logo-wrapper">
           <span>
             <img
               src={navLogo}
               alt="icon"
               style={{
-                width: "50px",
+                width: "60px",
                 overflow: "hidden",
               }}
             />
           </span>
-        </Link>
-        <span>
-          <h1>SOLIS</h1>
-          <h1>TĪRĪBAI</h1>
-        </span>
-      </div>
+          <span className="logo-name-wrapper">
+            <h1>SOLIS</h1>
+            <h1>TĪRĪBAI</h1>
+          </span>
+        </div>
+      </Link>
       {/* <span>
         <p>📞 Tel. (+371) 26 364 882</p>
         <p>
