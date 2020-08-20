@@ -9,7 +9,7 @@ const errorPage = () => {
       <Helmet>
         <title>Kļūda 404 | Solis Tīrībai</title>
       </Helmet>
-      <h1>Sry, this page does not exist!</h1>
+      <h1>Atvainojiet Jūs meklētā lapa ir dzēsta vai pārvietota!</h1>
     </Layout>
   )
 }
