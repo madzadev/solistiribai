@@ -22,9 +22,9 @@ const homePage = () => {
             tīrīšana
           </h1>
 
-          <h3 className="hero-description-">
+          <p className="hero-description-bold">
             Īstā izvēle, lai Jums apkārt atgrieztos tīrība un svaigums!
-          </h3>
+          </p>
           {/* <p className="hero-description">
             Garantējam izpildītā darba kvalitāti!
           </p> */}

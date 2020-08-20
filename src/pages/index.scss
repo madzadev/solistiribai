@@ -10,10 +10,15 @@
   margin-bottom: 20px;
 }
 
+.hero-description-bold {
+  font-size: 22px;
+}
+
 .hero-description {
   font-size: 18px;
   // text-align: justify;
   // text-justify: inter-word;
+  // font-weight: 600;
 }
 
 .hero-btn {
@@ -86,6 +91,10 @@
 
   .hero-title {
     font-size: 2rem;
+  }
+
+  .hero-description-bold {
+    font-size: 1.5rem;
   }
 
   .hero-btn {
