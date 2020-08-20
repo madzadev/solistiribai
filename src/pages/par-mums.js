@@ -66,14 +66,14 @@ const aboutUsPage = () => {
 
       <br />
 
-      <h1 className="about-title">Solis Tīrībai klienti:</h1>
+      {/* <h1 className="about-title">Solis Tīrībai klienti:</h1> */}
       {/* <TestimonialCard /> */}
-      <p>
+      {/* <p>
         🔸 privātpersonas; - 🔸restorāni; - 🔸banketu zāles; - 🔸internātskolas;
         - 🔸skolas; - 🔸frizētavas; - 🔸skaistumkopšanas saloni; - 🔸fitnesa
         centri; - 🔸autoservisi; - 🔸viesnīcas; - 🔸bērnudārzi; - 🔸viesu nami
         u.c.
-      </p>
+      </p> */}
     </Layout>
   )
 }
