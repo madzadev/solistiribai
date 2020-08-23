@@ -18,23 +18,19 @@ const contactsPage = () => {
 
     console.log(name)
 
-    axios({
-      method: "POST",
-      url: "https://solistiribai.herokuapp.com/contact",
-      data: {
-        name: name,
-        email: email,
-        phone: phone,
-        message: message,
-      },
-    }).then(response => {
-      if (response.data.msg === "success") {
-        alert("Message Sent.")
-        // this.resetForm()
-      } else if (response.data.msg === "fail") {
-        alert("Message failed to send.")
-      }
-    })
+    axios
+      .post("https://solistiribai.herokuapp.com/contact", {
+        name,
+        email,
+        phone,
+        message,
+      })
+      .then(function (response) {
+        console.log(response)
+      })
+      .catch(function (error) {
+        console.log(error)
+      })
   }
 
   return (
