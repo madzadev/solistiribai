@@ -59,21 +59,25 @@ const contactsPage = () => {
         </div>
         <div>
           <h1 className="contacts-title">Nosūtīt e-pastu</h1>
-          <form action="post">
+          <form name="contact" method="POST" data-netlify="true">
             <label htmlFor="name">Vārds*</label>
-            <input type="text" />
+            <input type="text" name="name" />
 
             <label htmlFor="name">E-pasts*</label>
-            <input type="text" />
+            <input type="text" name="email" />
+
+            <input type="text" name="_gotcha" style={{ display: "none" }} />
 
             <label htmlFor="name">Telefons</label>
-            <input type="text" />
+            <input type="text" name="phone" />
 
             <label htmlFor="name">Jūsu ziņa*</label>
-            <textarea type="text" />
+            <textarea type="text" name="message" />
 
             <p className="contact-required">*Obligāti aizpildāmie lauki</p>
-            <button className="contact-btn">Nosūtīt →</button>
+            <button className="contact-btn" type="submit">
+              Nosūtīt →
+            </button>
           </form>
         </div>
       </div>
