@@ -8,6 +8,31 @@ import WhatsApp from "./../images/contacts/whatsapp.png"
 import Facebook from "./../images/contacts/facebook.png"
 
 const contactsPage = () => {
+  const handleSubmit = e => {
+    e.preventDefault()
+    const name = document.getElementById("name").value
+    const email = document.getElementById("email").value
+    const phone = document.getElementById("phone").value
+    const message = document.getElementById("message").value
+    axios({
+      method: "POST",
+      url: "https://solistiribai.herokuapp.com/contact",
+      data: {
+        name: name,
+        email: email,
+        phone: phone,
+        message: message,
+      },
+    }).then(response => {
+      if (response.data.msg === "success") {
+        alert("Message Sent.")
+        // this.resetForm()
+      } else if (response.data.msg === "fail") {
+        alert("Message failed to send.")
+      }
+    })
+  }
+
   return (
     <Layout>
       <Helmet>
@@ -59,14 +84,12 @@ const contactsPage = () => {
         </div>
         <div>
           <h1 className="contacts-title">Nosūtīt e-pastu</h1>
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST" onSubmit={handleSubmit}>
             <label htmlFor="name">Vārds*</label>
             <input type="text" name="name" />
 
             <label htmlFor="name">E-pasts*</label>
             <input type="text" name="email" />
-
-            <input type="text" name="_gotcha" style={{ display: "none" }} />
 
             <label htmlFor="name">Telefons</label>
             <input type="text" name="phone" />
