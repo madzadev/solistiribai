@@ -1,5 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
+import axios from "axios"
 
 import Layout from "./../components/layout"
 import "./kontakti.scss"
@@ -14,6 +15,9 @@ const contactsPage = () => {
     const email = document.getElementById("email").value
     const phone = document.getElementById("phone").value
     const message = document.getElementById("message").value
+
+    console.log(name)
+
     axios({
       method: "POST",
       url: "https://solistiribai.herokuapp.com/contact",
@@ -86,16 +90,16 @@ const contactsPage = () => {
           <h1 className="contacts-title">Nosūtīt e-pastu</h1>
           <form name="contact" method="POST" onSubmit={handleSubmit}>
             <label htmlFor="name">Vārds*</label>
-            <input type="text" name="name" />
+            <input id="name" type="text" name="name" />
 
             <label htmlFor="name">E-pasts*</label>
-            <input type="text" name="email" />
+            <input id="email" type="text" name="email" />
 
             <label htmlFor="name">Telefons</label>
-            <input type="text" name="phone" />
+            <input id="phone" type="text" name="phone" />
 
             <label htmlFor="name">Jūsu ziņa*</label>
-            <textarea type="text" name="message" />
+            <textarea id="message" type="text" name="message" />
 
             <p className="contact-required">*Obligāti aizpildāmie lauki</p>
             <button className="contact-btn" type="submit">

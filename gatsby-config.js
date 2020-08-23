@@ -7,4 +7,8 @@
 module.exports = {
   /* Your site config here */
   plugins: [`gatsby-plugin-sass`, `gatsby-plugin-react-helmet`],
+  proxy: {
+    prefix: "/contact",
+    url: "https://solistiribai.herokuapp.com",
+  },
 }
