@@ -32,10 +32,6 @@ const aboutUsPage = () => {
             <img src={Tick} alt="" />
             <p>Individuāla pieeja katram klientam</p>
           </div>
-          {/* <div className="about-reason">
-            <img src={Tick} alt="" />
-            <p>Savu darbu izpildām rūpīgi un atbildīgi</p>
-          </div> */}
           <div className="about-reason">
             <img src={Tick} alt="" />
             <p>Iztīrām dažādas grūtības pakāpes traipus</p>
@@ -98,11 +94,10 @@ const aboutUsPage = () => {
         </div>
       </div>
 
-      <br />
+      {/* <br />
 
-      {/* <h1 className="about-title">Solis Tīrībai klienti:</h1> */}
-      {/* <TestimonialCard /> */}
-      {/* <p>
+      <h1 className="about-title">Solis Tīrībai klienti:</h1>
+      <p>
         🔸 privātpersonas; - 🔸restorāni; - 🔸banketu zāles; - 🔸internātskolas;
         - 🔸skolas; - 🔸frizētavas; - 🔸skaistumkopšanas saloni; - 🔸fitnesa
         centri; - 🔸autoservisi; - 🔸viesnīcas; - 🔸bērnudārzi; - 🔸viesu nami

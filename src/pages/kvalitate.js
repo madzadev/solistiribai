@@ -21,10 +21,10 @@ const galleryPage = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Pirms un Pēc | Solis Tīrībai</title>
+        <title>Kvalitāte | Solis Tīrībai</title>
       </Helmet>
       {/* 1 divans, 2 paklajs sedeklis gulta kresls divans */}
-      <h1 className="quality-title">Paveiktais:</h1>
+      <h1 className="quality-title">Paveiktie darbi:</h1>
       <div className="gallery-content">
         <div className="quality-box">
           <img className="quality-img" src={SofaBefore} alt="img" />
