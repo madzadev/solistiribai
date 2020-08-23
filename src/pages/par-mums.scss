@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
-  place-items: center;
+  place-items: normal center;
+  min-height: 400px;
 
   @media screen and (max-width: 865px) {
     grid-template-columns: 1fr;
@@ -10,7 +11,7 @@
 }
 
 .aboutImg {
-  width: 350px;
+  // width: 350px;
   // border: 1px solid rgb(0, 100, 8);
   // border-radius: 50%;
 }
@@ -25,3 +26,16 @@
   // place-items: start;
   align-items: center;
 }
+
+// .fb-comments,
+// .fb-comments iframe[style],
+// .fb-like-box,
+// .fb-like-box iframe[style] {
+//   width: 100% !important;
+// }
+// .fb-comments span,
+// .fb-comments iframe span[style],
+// .fb-like-box span,
+// .fb-like-box iframe span[style] {
+//   width: 100% !important;
+// }

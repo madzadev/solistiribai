@@ -17,7 +17,7 @@ const aboutUsPage = () => {
           defer
           crossorigin="anonymous"
           src="https://connect.facebook.net/lv_LV/sdk.js#xfbml=1&version=v8.0&appId=620075488933384&autoLogAppEvents=1"
-          nonce="i1jpVPSm"
+          nonce="guDTfC4o"
         ></script>
       </Helmet>
       <div id="fb-root"></div>
@@ -36,7 +36,6 @@ const aboutUsPage = () => {
             <img src={Tick} alt="" />
             <p>Savu darbu izpildām rūpīgi un atbildīgi</p>
           </div> */}
-
           <div className="about-reason">
             <img src={Tick} alt="" />
             <p>Iztīrām dažādas grūtības pakāpes traipus</p>
@@ -67,14 +66,28 @@ const aboutUsPage = () => {
           </div> */}
         </div>
         <div className="about-image">
-          {/* <img className="aboutImg" src={aboutImage} alt="img" /> */}
-          {/* <h1 className="about-title">Atsauksmes</h1> */}
           <iframe
-            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fineta.dzerina1%2Fposts%2F1767488250055287&show_text=true&width=auto&appId=620075488933384&height=175"
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fineta.dzerina1%2Fposts%2F1767488250055287&show_text=true&width=552&appId=620075488933384&height=175"
             style={{
               border: "none",
               overflow: "hidden",
-              width: "100%",
+              width: "552px",
+              height: "175px",
+            }}
+            scrolling="no"
+            frameborder="0"
+            allowTransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+
+          <br />
+          <br />
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fanita.ozolina.37454%2Fposts%2F159073862008658&show_text=true&width=552&appId=620075488933384&height=137"
+            style={{
+              border: "none",
+              overflow: "hidden",
+              width: "552px",
               height: "175px",
             }}
             scrolling="no"
