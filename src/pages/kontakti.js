@@ -23,6 +23,8 @@ const ContactsPage = () => {
     error: "",
   })
 
+  let [sent, setSent] = useState(false)
+
   const reset = () => {
     setName("")
     setEmail("")
@@ -41,19 +43,23 @@ const ContactsPage = () => {
         message: message.value,
       })
       .then(function (response) {
-        // console.log(response.data.errors.nameError)
-        const { nameError, emailError, messageError } = response.data.errors
+        const errors = response.data.errors
 
-        if (nameError) {
-          setName({ ...name, error: nameError })
-        }
+        if (errors) {
+          const { nameError, emailError, messageError } = response.data.errors
+          if (nameError) {
+            setName({ ...name, error: nameError })
+          }
 
-        if (emailError) {
-          setEmail({ ...email, error: emailError })
-        }
+          if (emailError) {
+            setEmail({ ...email, error: emailError })
+          }
 
-        if (messageError) {
-          setMessage({ ...message, error: messageError })
+          if (messageError) {
+            setMessage({ ...message, error: messageError })
+          }
+        } else {
+          setSent(true)
         }
       })
       .catch(function (error) {
@@ -112,48 +118,57 @@ const ContactsPage = () => {
         </div>
         <div>
           <h1 className="contacts-title">Nosūtīt e-pastu</h1>
-          <form name="contact" method="POST" onSubmit={handleSubmit}>
-            <label htmlFor="name">Vārds*</label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              onChange={e => setName(e.target.value)}
-            />
-            <p className="contacts-error-message">{name.error}</p>
+          {!sent ? (
+            <form name="contact" method="POST" onSubmit={handleSubmit}>
+              <label htmlFor="name">Vārds*</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                onChange={e => setName({ ...name, value: e.target.value })}
+              />
+              <p className="contacts-error-message">{name.error}</p>
 
-            <label htmlFor="email">E-pasts*</label>
-            <input
-              id="email"
-              type="text"
-              name="email"
-              onChange={e => setEmail(e.target.value)}
-            />
-            <p className="contacts-error-message">{email.error}</p>
+              <label htmlFor="email">E-pasts*</label>
+              <input
+                id="email"
+                type="text"
+                name="email"
+                onChange={e => setEmail({ ...email, value: e.target.value })}
+              />
+              <p className="contacts-error-message">{email.error}</p>
 
-            <label htmlFor="phone">Telefons</label>
-            <input
-              id="phone"
-              type="text"
-              name="phone"
-              onChange={e => setPhone(e.target.value)}
-            />
-            <p className="contacts-error-message"></p>
+              <label htmlFor="phone">Telefons</label>
+              <input
+                id="phone"
+                type="text"
+                name="phone"
+                onChange={e => setPhone(e.target.value)}
+              />
+              <p className="contacts-error-message"></p>
 
-            <label htmlFor="message">Jūsu ziņa*</label>
-            <textarea
-              id="message"
-              type="text"
-              name="message"
-              onChange={e => setMessage(e.target.value)}
-            />
-            <p className="contacts-error-message">{message.error}</p>
+              <label htmlFor="message">Jūsu ziņa*</label>
+              <textarea
+                id="message"
+                type="text"
+                name="message"
+                onChange={e =>
+                  setMessage({ ...message, value: e.target.value })
+                }
+              />
+              <p className="contacts-error-message">{message.error}</p>
 
-            <p className="contact-required">*Obligāti aizpildāmie lauki</p>
-            <button className="contact-btn" type="submit">
-              Nosūtīt →
-            </button>
-          </form>
+              <p className="contact-required">*Obligāti aizpildāmie lauki</p>
+              <button className="contact-btn" type="submit">
+                Nosūtīt →
+              </button>
+            </form>
+          ) : (
+            <h1>
+              Paldies! Jūsu ziņa veiksmīgi nosūtīta Solis Tīrībai un atbildēsim
+              tuvākajā laikā!
+            </h1>
+          )}
         </div>
       </div>
     </Layout>
