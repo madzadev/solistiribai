@@ -9,7 +9,6 @@ const NavBar = () => {
   let [openState, setOpenState] = useState(false)
 
   const onClickHandler = () => {
-    console.log("Clicked")
     setOpenState(!openState)
   }
 

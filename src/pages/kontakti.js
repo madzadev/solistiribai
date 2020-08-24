@@ -15,7 +15,7 @@ const ContactsPage = () => {
   let [message, setMessage] = useState("")
 
   const reset = () => {
-    setName((name = ""))
+    setName("")
     setEmail("")
     setPhone("")
     setMessage("")
@@ -32,8 +32,7 @@ const ContactsPage = () => {
         message,
       })
       .then(function (response) {
-        console.log(response)
-        reset()
+        console.log(response.data)
       })
       .catch(function (error) {
         console.log(error)
