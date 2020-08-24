@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import Layout from "./../components/layout"
 import "./cenas.scss"
 
-const pricesPage = () => {
+const PricesPage = () => {
   return (
     <Layout>
       <Helmet>
@@ -47,4 +47,4 @@ const pricesPage = () => {
   )
 }
 
-export default pricesPage
+export default PricesPage

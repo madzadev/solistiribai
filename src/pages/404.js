@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 
 import Layout from "./../components/layout"
 
-const errorPage = () => {
+const ErrorPage = () => {
   return (
     <Layout>
       <Helmet>
@@ -14,4 +14,4 @@ const errorPage = () => {
   )
 }
 
-export default errorPage
+export default ErrorPage

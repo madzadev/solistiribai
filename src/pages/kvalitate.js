@@ -17,7 +17,7 @@ import ChairAfter from "./../images/quality/5-chair-after.jpg"
 import Sofa2Before from "./../images/quality/6-sofa-before.jpg"
 import Sofa2After from "./../images/quality/6-sofa-after.jpg"
 
-const galleryPage = () => {
+const QualityPage = () => {
   return (
     <Layout>
       <Helmet>
@@ -79,4 +79,4 @@ const galleryPage = () => {
   )
 }
 
-export default galleryPage
+export default QualityPage

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Helmet from "react-helmet"
 import axios from "axios"
 
@@ -8,13 +8,21 @@ import "./kontakti.scss"
 import WhatsApp from "./../images/contacts/whatsapp.png"
 import Facebook from "./../images/contacts/facebook.png"
 
-const contactsPage = () => {
+const ContactsPage = () => {
+  let [name, setName] = useState("")
+  let [email, setEmail] = useState("")
+  let [phone, setPhone] = useState("")
+  let [message, setMessage] = useState("")
+
+  const reset = () => {
+    setName((name = ""))
+    setEmail("")
+    setPhone("")
+    setMessage("")
+  }
+
   const handleSubmit = e => {
     e.preventDefault()
-    let name = document.getElementById("name").value
-    let email = document.getElementById("email").value
-    let phone = document.getElementById("phone").value
-    let message = document.getElementById("message").value
 
     axios
       .post("https://solistiribai.herokuapp.com/contact", {
@@ -25,6 +33,7 @@ const contactsPage = () => {
       })
       .then(function (response) {
         console.log(response)
+        reset()
       })
       .catch(function (error) {
         console.log(error)
@@ -84,16 +93,40 @@ const contactsPage = () => {
           <h1 className="contacts-title">Nosūtīt e-pastu</h1>
           <form name="contact" method="POST" onSubmit={handleSubmit}>
             <label htmlFor="name">Vārds*</label>
-            <input id="name" type="text" name="name" />
+            <input
+              id="name"
+              type="text"
+              name="name"
+              onChange={e => setName(e.target.value)}
+            />
+            <p className="contacts-error-message"></p>
 
-            <label htmlFor="name">E-pasts*</label>
-            <input id="email" type="text" name="email" />
+            <label htmlFor="email">E-pasts*</label>
+            <input
+              id="email"
+              type="text"
+              name="email"
+              onChange={e => setEmail(e.target.value)}
+            />
+            <p className="contacts-error-message"></p>
 
-            <label htmlFor="name">Telefons</label>
-            <input id="phone" type="text" name="phone" />
+            <label htmlFor="phone">Telefons</label>
+            <input
+              id="phone"
+              type="text"
+              name="phone"
+              onChange={e => setPhone(e.target.value)}
+            />
+            <p className="contacts-error-message"></p>
 
-            <label htmlFor="name">Jūsu ziņa*</label>
-            <textarea id="message" type="text" name="message" />
+            <label htmlFor="message">Jūsu ziņa*</label>
+            <textarea
+              id="message"
+              type="text"
+              name="message"
+              onChange={e => setMessage(e.target.value)}
+            />
+            <p className="contacts-error-message"></p>
 
             <p className="contact-required">*Obligāti aizpildāmie lauki</p>
             <button className="contact-btn" type="submit">
@@ -106,4 +139,4 @@ const contactsPage = () => {
   )
 }
 
-export default contactsPage
+export default ContactsPage

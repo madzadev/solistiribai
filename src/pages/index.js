@@ -8,7 +8,7 @@ import "./index.scss"
 // import image from "./../images/hero-img.png"
 // import Slideshow from "./../components/slideshow"
 
-const homePage = () => {
+const HomePage = () => {
   return (
     <div className="hero-wrapper">
       <Layout>
@@ -54,4 +54,4 @@ const homePage = () => {
   )
 }
 
-export default homePage
+export default HomePage

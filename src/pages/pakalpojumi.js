@@ -11,7 +11,7 @@ import MatressCleaning from "./../images/services/mattress-cleaning.jpg"
 import CarSeatCleaning from "./../images/services/car-seat-cleaning.jpg"
 import OverallCleaning from "./../images/services/overall-cleaning.jpg"
 
-const servicesPage = () => {
+const ServicesPage = () => {
   return (
     <Layout>
       <Helmet>
@@ -55,4 +55,4 @@ const servicesPage = () => {
   )
 }
 
-export default servicesPage
+export default ServicesPage

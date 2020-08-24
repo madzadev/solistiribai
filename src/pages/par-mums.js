@@ -7,7 +7,7 @@ import Tick from "./../images/tick.png"
 
 // import aboutImage from "./../images/cleaner-girl.png"
 
-const aboutUsPage = () => {
+const AboutUsPage = () => {
   return (
     <Layout>
       <Helmet>
@@ -107,4 +107,4 @@ const aboutUsPage = () => {
   )
 }
 
-export default aboutUsPage
+export default AboutUsPage
