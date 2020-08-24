@@ -11,7 +11,7 @@ const PricesPage = () => {
         <title>Cenas | Solis Tīrībai</title>
       </Helmet>
 
-      <h1 className="prices-title">Cenrādis:</h1>
+      <h1 className="prices-title">Mūsu izcenojumi:</h1>
       <div className="prices-content">
         <div className="prices-card-box">
           <h3 className="prices-card-title">Krēslu tīrīšana</h3>

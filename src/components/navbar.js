@@ -75,9 +75,9 @@ const NavBar = () => {
         <Link
           className={openState ? "navbar-link opened" : "navbar-link"}
           activeClassName="navbar-link-active"
-          to="/kvalitate"
+          to="/piemeri"
         >
-          Kvalitāte
+          Piemēri
         </Link>
         <Link
           className={openState ? "navbar-link opened" : "navbar-link"}

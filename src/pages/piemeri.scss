@@ -1,8 +1,8 @@
 .gallery-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 100px 1fr;
   grid-template-rows: 200px;
-  column-gap: 30px;
+  column-gap: 20px;
   row-gap: 30px;
   place-items: center;
 }
@@ -14,7 +14,7 @@
 .quality-box {
   padding: 10px;
   text-align: center;
-  width: 90%;
+  width: 100%;
 }
 
 .quality-img {
@@ -28,7 +28,28 @@
   }
 }
 
+.arrow-box {
+  text-align: center;
+}
+
+.arrow-right {
+  width: 40px;
+}
+
 @media screen and (max-width: 1000px) {
+  .gallery-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
+    column-gap: 30px;
+    row-gap: 30px;
+    place-items: center;
+  }
+
+  .arrow-box {
+    display: none;
+  }
+
   .quality-img {
     width: 100%;
   }
