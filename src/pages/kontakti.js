@@ -35,10 +35,10 @@ const ContactsPage = () => {
 
     axios
       .post("https://solistiribai.herokuapp.com/contact", {
-        name,
-        email,
-        phone,
-        message,
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        message: message.value,
       })
       .then(function (response) {
         // console.log(response.data.errors.nameError)
