@@ -36,6 +36,7 @@ const PricesPage = () => {
       </div>
 
       <br />
+
       <p className="prices-notes">
         *Lai uzzinātu precīzākas cenas - sazinies ar mums!
       </p>

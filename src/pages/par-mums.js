@@ -94,7 +94,7 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      {/* <br />
+      <br />
 
       <h1 className="about-title">Solis Tīrībai klienti:</h1>
       <p>
@@ -102,7 +102,7 @@ const AboutUsPage = () => {
         - 🔸skolas; - 🔸frizētavas; - 🔸skaistumkopšanas saloni; - 🔸fitnesa
         centri; - 🔸autoservisi; - 🔸viesnīcas; - 🔸bērnudārzi; - 🔸viesu nami
         u.c.
-      </p> */}
+      </p>
     </Layout>
   )
 }
