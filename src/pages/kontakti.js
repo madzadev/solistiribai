@@ -32,7 +32,20 @@ const ContactsPage = () => {
         message,
       })
       .then(function (response) {
-        console.log(response.data)
+        // console.log(response.data.errors.nameError)
+        const { nameError, emailError, messageError } = response.data.errors
+
+        if (nameError) {
+          console.log(nameError)
+        }
+
+        if (emailError) {
+          console.log(emailError)
+        }
+
+        if (messageError) {
+          console.log(messageError)
+        }
       })
       .catch(function (error) {
         console.log(error)
