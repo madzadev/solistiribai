@@ -24,3 +24,22 @@
 .about-why {
   margin-bottom: 30px;
 }
+
+.about-clients-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.about-clients-box {
+  text-align: center;
+}
+
+// .about-clients-box img {
+//   width: 70px;
+// }
+
+// @media screen and (max-width: 1000px) {
+//   .about-clients-wrapper {
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+// }

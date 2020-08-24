@@ -36,6 +36,21 @@
   font-size: 20px;
 }
 
+.prices-notes-wrapper {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 70px auto;
+}
+
+.prices-notes-icon {
+  width: 60px;
+}
+
+.prices-notes-box {
+  background-color: #fce1e5;
+  padding: 10px;
+}
+
 @media screen and (max-width: 800px) {
   .prices-content {
     grid-template-columns: 1fr;
