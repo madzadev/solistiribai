@@ -9,10 +9,19 @@ import WhatsApp from "./../images/contacts/whatsapp.png"
 import Facebook from "./../images/contacts/facebook.png"
 
 const ContactsPage = () => {
-  let [name, setName] = useState("")
-  let [email, setEmail] = useState("")
+  let [name, setName] = useState({
+    value: "",
+    error: "",
+  })
+  let [email, setEmail] = useState({
+    value: "",
+    error: "",
+  })
   let [phone, setPhone] = useState("")
-  let [message, setMessage] = useState("")
+  let [message, setMessage] = useState({
+    value: "",
+    error: "",
+  })
 
   const reset = () => {
     setName("")
@@ -36,15 +45,15 @@ const ContactsPage = () => {
         const { nameError, emailError, messageError } = response.data.errors
 
         if (nameError) {
-          console.log(nameError)
+          setName({ ...name, error: nameError })
         }
 
         if (emailError) {
-          console.log(emailError)
+          setEmail({ ...email, error: emailError })
         }
 
         if (messageError) {
-          console.log(messageError)
+          setMessage({ ...message, error: messageError })
         }
       })
       .catch(function (error) {
@@ -111,7 +120,7 @@ const ContactsPage = () => {
               name="name"
               onChange={e => setName(e.target.value)}
             />
-            <p className="contacts-error-message"></p>
+            <p className="contacts-error-message">{name.error}</p>
 
             <label htmlFor="email">E-pasts*</label>
             <input
@@ -120,7 +129,7 @@ const ContactsPage = () => {
               name="email"
               onChange={e => setEmail(e.target.value)}
             />
-            <p className="contacts-error-message"></p>
+            <p className="contacts-error-message">{email.error}</p>
 
             <label htmlFor="phone">Telefons</label>
             <input
@@ -138,7 +147,7 @@ const ContactsPage = () => {
               name="message"
               onChange={e => setMessage(e.target.value)}
             />
-            <p className="contacts-error-message"></p>
+            <p className="contacts-error-message">{message.error}</p>
 
             <p className="contact-required">*Obligāti aizpildāmie lauki</p>
             <button className="contact-btn" type="submit">
