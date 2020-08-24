@@ -11,12 +11,10 @@ import Facebook from "./../images/contacts/facebook.png"
 const contactsPage = () => {
   const handleSubmit = e => {
     e.preventDefault()
-    const name = document.getElementById("name").value
-    const email = document.getElementById("email").value
-    const phone = document.getElementById("phone").value
-    const message = document.getElementById("message").value
-
-    console.log(name)
+    let name = document.getElementById("name").value
+    let email = document.getElementById("email").value
+    let phone = document.getElementById("phone").value
+    let message = document.getElementById("message").value
 
     axios
       .post("https://solistiribai.herokuapp.com/contact", {
