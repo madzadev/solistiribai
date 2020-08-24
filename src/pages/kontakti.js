@@ -39,7 +39,7 @@ const ContactsPage = () => {
       .post("https://solistiribai.herokuapp.com/contact", {
         name: name.value,
         email: email.value,
-        phone: phone.value,
+        phone,
         message: message.value,
       })
       .then(function (response) {
@@ -117,57 +117,81 @@ const ContactsPage = () => {
           </div>
         </div>
         <div>
-          <h1 className="contacts-title">Nosūtīt e-pastu</h1>
           {!sent ? (
-            <form name="contact" method="POST" onSubmit={handleSubmit}>
-              <label htmlFor="name">Vārds*</label>
-              <input
-                id="name"
-                type="text"
-                name="name"
-                onChange={e => setName({ ...name, value: e.target.value })}
-              />
-              <p className="contacts-error-message">{name.error}</p>
+            <>
+              <h1 className="contacts-title">Nosūtīt e-pastu</h1>
+              <form name="contact" method="POST" onSubmit={handleSubmit}>
+                <div className="input-wrapper">
+                  <label htmlFor="name">Vārds*</label>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    className={name.error ? "alert-border" : ""}
+                    onChange={e =>
+                      setName({ ...name, value: e.target.value, error: "" })
+                    }
+                  />
+                  <p className="contacts-error-message">{name.error}</p>
+                </div>
 
-              <label htmlFor="email">E-pasts*</label>
-              <input
-                id="email"
-                type="text"
-                name="email"
-                onChange={e => setEmail({ ...email, value: e.target.value })}
-              />
-              <p className="contacts-error-message">{email.error}</p>
+                <div className="input-wrapper">
+                  <label htmlFor="email">E-pasts*</label>
+                  <input
+                    id="email"
+                    type="text"
+                    name="email"
+                    className={email.error ? "alert-border" : ""}
+                    onChange={e =>
+                      setEmail({ ...email, value: e.target.value, error: "" })
+                    }
+                  />
+                  <p className="contacts-error-message">{email.error}</p>
+                </div>
 
-              <label htmlFor="phone">Telefons</label>
-              <input
-                id="phone"
-                type="text"
-                name="phone"
-                onChange={e => setPhone(e.target.value)}
-              />
-              <p className="contacts-error-message"></p>
+                <div className="input-wrapper">
+                  <label htmlFor="phone">Telefons</label>
+                  <input
+                    id="phone"
+                    type="text"
+                    name="phone"
+                    onChange={e => setPhone(e.target.value)}
+                  />
+                  <p className="contacts-error-message"> </p>
+                </div>
 
-              <label htmlFor="message">Jūsu ziņa*</label>
-              <textarea
-                id="message"
-                type="text"
-                name="message"
-                onChange={e =>
-                  setMessage({ ...message, value: e.target.value })
-                }
-              />
-              <p className="contacts-error-message">{message.error}</p>
+                <div className="input-wrapper">
+                  <label htmlFor="message">Jūsu ziņa*</label>
+                  <textarea
+                    id="message"
+                    type="text"
+                    name="message"
+                    className={message.error ? "alert-border" : ""}
+                    onChange={e =>
+                      setMessage({
+                        ...message,
+                        value: e.target.value,
+                        error: "",
+                      })
+                    }
+                  />
+                  <p className="contacts-error-message">{message.error}</p>
+                </div>
 
-              <p className="contact-required">*Obligāti aizpildāmie lauki</p>
-              <button className="contact-btn" type="submit">
-                Nosūtīt →
-              </button>
-            </form>
+                <p className="contact-required">*Obligāti aizpildāmie lauki</p>
+                <button className="contact-btn" type="submit">
+                  Nosūtīt →
+                </button>
+              </form>
+            </>
           ) : (
-            <h1>
-              Paldies! Jūsu ziņa veiksmīgi nosūtīta Solis Tīrībai un atbildēsim
-              tuvākajā laikā!
-            </h1>
+            <>
+              <h1>Paldies!</h1>
+              <h2>Jūsu ziņa veiksmīgi nosūtīta Solis Tīrībai!</h2>
+              <h2>
+                Atbildēsim tuvākajā laikā uz Jūsu norādītajiem kontaktiem!
+              </h2>
+            </>
           )}
         </div>
       </div>
