@@ -114,13 +114,13 @@ const ContactsPage = () => {
             </p>
             <br />
             <div className="whatsapp-wrapper">
-              <a href="https://api.whatsapp.com/send?phone=37127316899">
+              <a href="https://api.whatsapp.com/send?phone=37126364882">
                 <img className="whatsapp-img" src={WhatsApp} alt="img" />
               </a>
               <p>
                 <a
                   className="whatsapp-link"
-                  href="https://api.whatsapp.com/send?phone=37127316899"
+                  href="https://api.whatsapp.com/send?phone=37126364882"
                 >
                   WhatsApp (sūti foto, uzzini cenu)
                 </a>
