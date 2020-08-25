@@ -7,6 +7,7 @@ import "./kontakti.scss"
 
 import WhatsApp from "./../images/contacts/whatsapp.png"
 import Facebook from "./../images/contacts/facebook.png"
+
 import validateContactInput from "./../validation/validator.js"
 
 const ContactsPage = () => {
@@ -26,24 +27,18 @@ const ContactsPage = () => {
 
   let [sent, setSent] = useState(false)
 
-  const reset = () => {
-    setName("")
-    setEmail("")
-    setPhone("")
-    setMessage("")
-  }
-
   const handleSubmit = e => {
     e.preventDefault()
+
     let data = {
       name: name.value,
       email: email.value,
       phone: phone.value,
       message: message.value,
     }
-    // let { name, email, phone, message } = data.value
-    // console.log(name)
+
     const validator = validateContactInput(data)
+
     if (validator.isValid) {
       axios
         .post("https://solistiribai.herokuapp.com/contact", {

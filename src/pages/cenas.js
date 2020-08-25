@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import Layout from "./../components/layout"
 import "./cenas.scss"
 
-import Warning from "./../images/warning.png"
+import Warning from "./../images/warning3.png"
 
 const PricesPage = () => {
   return (
@@ -39,20 +39,16 @@ const PricesPage = () => {
       </div>
 
       <br />
-      <div className="prices-notes-wrapper">
-        <div className="prices-notes-icon-box">
-          <img className="prices-notes-icon" src={Warning} alt="" />
-        </div>
-        <div className="prices-notes-box">
-          <p className="prices-notes">
-            *Lai uzzinātu precīzākas cenas -{" "}
-            <Link to="/kontakti">sazinies ar mums</Link>!
-          </p>
-          <p className="prices-notes">
-            *Cenas atkarīgas no auduma materiāla un tīrības pakāpes, tādēļ ir
-            atšķirīgas.
-          </p>
-        </div>
+
+      <div className="prices-notes-box">
+        <p className="prices-notes">
+          *Lai uzzinātu precīzākas cenas -{" "}
+          <Link to="/kontakti">sazinies ar mums</Link>!
+        </p>
+        <p className="prices-notes">
+          *Cenas atkarīgas no auduma materiāla un tīrības pakāpes, tādēļ ir
+          atšķirīgas.
+        </p>
       </div>
     </Layout>
   )
