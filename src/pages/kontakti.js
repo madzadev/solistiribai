@@ -7,6 +7,7 @@ import "./kontakti.scss"
 
 import WhatsApp from "./../images/contacts/whatsapp.png"
 import Facebook from "./../images/contacts/facebook.png"
+import validateContactInput from "./../validation/validator.js"
 
 const ContactsPage = () => {
   let [name, setName] = useState({
@@ -34,37 +35,66 @@ const ContactsPage = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
+    let data = {
+      name: name.value,
+      email: email.value,
+      phone: phone.value,
+      message: message.value,
+    }
+    // let { name, email, phone, message } = data.value
+    // console.log(name)
+    const validator = validateContactInput(data)
+    if (validator.isValid) {
+      axios
+        .post("https://solistiribai.herokuapp.com/contact", {
+          name: name.value,
+          email: email.value,
+          phone,
+          message: message.value,
+        })
+        .then(function (response) {
+          const errors = response.data.errors
 
-    axios
-      .post("https://solistiribai.herokuapp.com/contact", {
-        name: name.value,
-        email: email.value,
-        phone,
-        message: message.value,
-      })
-      .then(function (response) {
-        const errors = response.data.errors
+          if (errors) {
+            const { nameError, emailError, messageError } = response.data.errors
+            if (nameError) {
+              setName({ ...name, error: nameError })
+            }
 
-        if (errors) {
-          const { nameError, emailError, messageError } = response.data.errors
-          if (nameError) {
-            setName({ ...name, error: nameError })
+            if (emailError) {
+              setEmail({ ...email, error: emailError })
+            }
+
+            if (messageError) {
+              setMessage({ ...message, error: messageError })
+            }
+          } else {
+            setSent(true)
           }
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    } else {
+      const errors = validator.errors
 
-          if (emailError) {
-            setEmail({ ...email, error: emailError })
-          }
-
-          if (messageError) {
-            setMessage({ ...message, error: messageError })
-          }
-        } else {
-          setSent(true)
+      if (errors) {
+        const { nameError, emailError, messageError } = errors
+        if (nameError) {
+          setName({ ...name, error: nameError })
         }
-      })
-      .catch(function (error) {
-        console.log(error)
-      })
+
+        if (emailError) {
+          setEmail({ ...email, error: emailError })
+        }
+
+        if (messageError) {
+          setMessage({ ...message, error: messageError })
+        }
+      } else {
+        setSent(true)
+      }
+    }
   }
 
   return (
