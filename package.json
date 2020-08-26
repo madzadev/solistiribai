@@ -18,6 +18,7 @@
     "gatsby": "^2.24.26",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sass": "^2.3.12",
+    "gatsby-plugin-sitemap": "^2.4.12",
     "is-empty": "^1.2.0",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
