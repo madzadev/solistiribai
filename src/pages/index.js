@@ -26,9 +26,6 @@ const HomePage = () => {
             <p className="hero-description-bold">
               Īstā izvēle, lai Jums apkārt atgrieztos tīrība un svaigums!
             </p>
-            {/* <p className="hero-description">
-            Garantējam izpildītā darba kvalitāti!
-          </p> */}
 
             <br />
             <p className="hero-description">

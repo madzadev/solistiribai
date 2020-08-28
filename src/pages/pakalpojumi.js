@@ -10,6 +10,9 @@ import ChairCleaning from "./../images/services/chair-cleaning.jpg"
 import MatressCleaning from "./../images/services/mattress-cleaning.jpg"
 import CarSeatCleaning from "./../images/services/car-seat-cleaning.jpg"
 import OverallCleaning from "./../images/services/overall-cleaning.jpg"
+import { LazyLoadImage } from "react-lazy-load-image-component"
+// import "react-lazy-load-image-component/src/effects/blur.css"
+import ReactImageAppear from "react-image-appear"
 
 const ServicesPage = () => {
   return (
@@ -21,33 +24,83 @@ const ServicesPage = () => {
       <h1 className="services-title">Mūsu pakalpojumi:</h1>
       <div className="services-content">
         <div className="services-box">
-          <img className="services-img" src={SofaCleaning} alt="img" />
-          <h3>Dīvānu tīrīšana</h3>
+          <ReactImageAppear
+            className="services-img"
+            src={SofaCleaning}
+            alt="img"
+            placeholderStyle={{
+              backgroundColor: "white",
+            }}
+            animation="none"
+          />
+          <h3 className="services-img-title">Dīvānu tīrīšana</h3>
           {/* <p>Iznīcina putekļu ērcītes</p> */}
         </div>
         <div className="services-box">
-          <img className="services-img" src={CarpetCleaning} alt="img" />
-          <h3>Paklāju tīrīšana</h3>
+          <ReactImageAppear
+            className="services-img"
+            src={CarpetCleaning}
+            alt="img"
+            placeholderStyle={{
+              backgroundColor: "white",
+            }}
+            animation="none"
+          />
+          <h3 className="services-img-title">Paklāju tīrīšana</h3>
           {/* <p>Lorem ipsum description</p> */}
         </div>
         <div className="services-box">
-          <img className="services-img" src={ChairCleaning} alt="img" />
-          <h3>Krēslu tīrīšana</h3>
+          <ReactImageAppear
+            className="services-img"
+            src={ChairCleaning}
+            alt="img"
+            placeholderStyle={{
+              backgroundColor: "white",
+            }}
+            animation="none"
+          />
+          <h3 className="services-img-title">Krēslu tīrīšana</h3>
           {/* <p>Lorem ipsum description</p> */}
         </div>
         <div className="services-box">
-          <img className="services-img" src={MatressCleaning} alt="img" />
-          <h3>Matraču tīrīšana</h3>
+          <ReactImageAppear
+            className="services-img"
+            src={MatressCleaning}
+            alt="img"
+            placeholderStyle={{
+              backgroundColor: "white",
+            }}
+            animation="none"
+          />
+          <h3 className="services-img-title">Matraču tīrīšana</h3>
           {/* <p>Lorem ipsum description</p> */}
         </div>
         <div className="services-box">
-          <img className="services-img" src={CarSeatCleaning} alt="img" />
-          <h3>Auto sēdekļu tīrīšana</h3>
+          <ReactImageAppear
+            className="services-img"
+            src={CarSeatCleaning}
+            alt="img"
+            placeholderStyle={{
+              backgroundColor: "white",
+            }}
+            animation="none"
+          />
+          <h3 className="services-img-title">Auto sēdekļu tīrīšana</h3>
           {/* <p>Lorem ipsum description</p> */}
         </div>
         <div className="services-box">
-          <img className="services-img" src={OverallCleaning} alt="img" />
-          <h3>Tīrīšanas uz uzkopšanas pakalpojumi</h3>
+          <ReactImageAppear
+            className="services-img"
+            src={OverallCleaning}
+            alt="img"
+            placeholderStyle={{
+              backgroundColor: "white",
+            }}
+            animation="none"
+          />
+          <h3 className="services-img-title">
+            Tīrīšanas uz uzkopšanas pakalpojumi
+          </h3>
           {/* <p>Lorem ipsum description</p> */}
         </div>
       </div>
