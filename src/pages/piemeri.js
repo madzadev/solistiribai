@@ -22,6 +22,7 @@ import Sofa2After from "./../images/quality/6-sofa-after.jpg"
 import ArrowRight from "./../images/arrow-right.png"
 
 const QualityPage = () => {
+  // Check if initial img load
   const isCached = src => {
     const image = new Image()
     image.src = src
@@ -36,7 +37,7 @@ const QualityPage = () => {
       <h1 className="quality-title">Paveiktie darbi:</h1>
       <div className="gallery-content">
         <div className="quality-box">
-          {isCached(Sofa2Before) ? (
+          {isCached(SofaBefore) ? (
             <img className="quality-img" src={SofaBefore} alt="img" />
           ) : (
             <ReactImageAppear
@@ -66,31 +67,40 @@ const QualityPage = () => {
           />
         </div>
         <div className="quality-box">
-          <ReactImageAppear
-            className="quality-img"
-            src={SofaAfter}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(SofaAfter) ? (
+            <img className="quality-img" src={SofaAfter} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="quality-img"
+              src={SofaAfter}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3>Pēc</h3>
         </div>
         <div className="quality-box">
-          <ReactImageAppear
-            className="quality-img"
-            src={CarpetBefore}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(CarpetBefore) ? (
+            <img className="quality-img" src={CarpetBefore} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="quality-img"
+              src={CarpetBefore}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3>Pirms</h3>
         </div>
         <div className="arrow-box">
           <h4>Solis Tīrībai</h4>
+
           <ReactImageAppear
             className="arrow-right"
             src={ArrowRight}
@@ -102,31 +112,40 @@ const QualityPage = () => {
           />
         </div>
         <div className="quality-box">
-          <ReactImageAppear
-            className="quality-img"
-            src={CarpetAfter}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(CarpetAfter) ? (
+            <img className="quality-img" src={CarpetAfter} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="quality-img"
+              src={CarpetAfter}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3>Pēc</h3>
         </div>
         <div className="quality-box">
-          <ReactImageAppear
-            className="quality-img"
-            src={SeatBefore}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(SeatBefore) ? (
+            <img className="quality-img" src={SeatBefore} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="quality-img"
+              src={SeatBefore}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3>Pirms</h3>
         </div>
         <div className="arrow-box">
           <h4>Solis Tīrībai</h4>
+
           <ReactImageAppear
             className="arrow-right"
             src={ArrowRight}
@@ -138,31 +157,40 @@ const QualityPage = () => {
           />
         </div>
         <div className="quality-box">
-          <ReactImageAppear
-            className="quality-img"
-            src={SeatAfter}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(SeatAfter) ? (
+            <img className="quality-img" src={SeatAfter} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="quality-img"
+              src={SeatAfter}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3>Pēc</h3>
         </div>
         <div className="quality-box">
-          <ReactImageAppear
-            className="quality-img"
-            src={BedBefore}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(BedBefore) ? (
+            <img className="quality-img" src={BedBefore} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="quality-img"
+              src={BedBefore}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3>Pirms</h3>
         </div>
         <div className="arrow-box">
           <h4>Solis Tīrībai</h4>
+
           <ReactImageAppear
             className="arrow-right"
             src={ArrowRight}
@@ -174,31 +202,40 @@ const QualityPage = () => {
           />
         </div>
         <div className="quality-box">
-          <ReactImageAppear
-            className="quality-img"
-            src={BedAfter}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(BedAfter) ? (
+            <img className="quality-img" src={BedAfter} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="quality-img"
+              src={BedAfter}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3>Pēc</h3>
         </div>
         <div className="quality-box">
-          <ReactImageAppear
-            className="quality-img"
-            src={ChairBefore}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(ChairBefore) ? (
+            <img className="quality-img" src={ChairBefore} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="quality-img"
+              src={ChairBefore}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3>Pirms</h3>
         </div>
         <div className="arrow-box">
           <h4>Solis Tīrībai</h4>
+
           <ReactImageAppear
             className="arrow-right"
             src={ArrowRight}
@@ -210,31 +247,40 @@ const QualityPage = () => {
           />
         </div>
         <div className="quality-box">
-          <ReactImageAppear
-            className="quality-img"
-            src={ChairAfter}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(ChairAfter) ? (
+            <img className="quality-img" src={ChairAfter} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="quality-img"
+              src={ChairAfter}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3>Pēc</h3>
         </div>
         <div className="quality-box">
-          <ReactImageAppear
-            className="quality-img"
-            src={Sofa2Before}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(Sofa2Before) ? (
+            <img className="quality-img" src={Sofa2Before} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="quality-img"
+              src={Sofa2Before}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3>Pirms</h3>
         </div>
         <div className="arrow-box">
           <h4>Solis Tīrībai</h4>
+
           <ReactImageAppear
             className="arrow-right"
             src={ArrowRight}
@@ -246,15 +292,19 @@ const QualityPage = () => {
           />
         </div>
         <div className="quality-box">
-          <ReactImageAppear
-            className="quality-img"
-            src={Sofa2After}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(Sofa2After) ? (
+            <img className="quality-img" src={Sofa2After} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="quality-img"
+              src={Sofa2After}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3>Pēc</h3>
         </div>
       </div>
