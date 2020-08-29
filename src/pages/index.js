@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import { lazyload } from "react-lazyload"
 
 import Placeholder from "./../images/4_1.jpg"
-import BackgroundImg from "./../images/44.jpg"
+import BackgroundImg from "./../images/444.jpg"
 
 import Placeholder2 from "./../images/111_1.jpg"
 import BackgroundImg2 from "./../images/111.jpg"

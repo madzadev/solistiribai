@@ -154,10 +154,9 @@ const AboutUsPage = () => {
       </div> */}
 
       <p>
-        🔸 privātpersonas; - 🔸restorāni; - 🔸banketu zāles; - 🔸internātskolas;
-        - 🔸skolas; - 🔸frizētavas; - 🔸skaistumkopšanas saloni; - 🔸fitnesa
-        centri; - 🔸autoservisi; - 🔸viesnīcas; - 🔸bērnudārzi; - 🔸viesu nami
-        u.c.
+        🔸 privātpersonas 🔸 restorāni 🔸 banketu zāles 🔸 internātskolas 🔸
+        skolas 🔸 frizētavas 🔸 skaistumkopšanas saloni 🔸 fitnesa centri 🔸
+        autoservisi 🔸 viesnīcas 🔸 bērnudārzi 🔸 viesu nami 🔸 u.c.
       </p>
     </Layout>
   )
