@@ -12,7 +12,7 @@
   min-height: 2.5rem;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  color: rgb(54, 54, 54);
+  color: rgb(0, 0, 0);
   font-weight: 500;
   font-size: 15px;
   // font-family: "Rajdhani", sans-serif;
@@ -26,4 +26,8 @@
 
 .contacts-link {
   color: rgb(15, 58, 199);
+}
+
+.contacts-link:hover {
+  color: rgb(75, 114, 240);
 }

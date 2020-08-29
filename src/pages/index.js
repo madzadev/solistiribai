@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import Helmet from "react-helmet"
-import { lazyload } from "react-lazyload"
 
 import Placeholder from "./../images/4_1.jpg"
 import BackgroundImg from "./../images/444.jpg"
@@ -11,11 +10,6 @@ import BackgroundImg2 from "./../images/111.jpg"
 
 import Layout from "./../components/layout"
 import "./index.scss"
-
-// import { LazyLoadImage } from "react-lazy-load-image-component"
-
-// import image from "./../images/hero-img.png"
-// import Slideshow from "./../components/slideshow"
 
 const random = Math.floor(Math.random() * 2)
 

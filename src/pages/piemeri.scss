@@ -22,7 +22,7 @@
 }
 
 .quality-img {
-  width: 80%;
+  width: 100%;
   height: 180px;
   border-radius: 5px;
   object-fit: cover;
@@ -37,6 +37,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  // box-sizing: border-box;
 }
 
 .arrow-right {
