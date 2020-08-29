@@ -155,7 +155,7 @@ const AboutUsPage = () => {
 
       <p>
         🔸 Privātpersonas 🔸 Restorāni 🔸 Banketu zāles 🔸 Internātskolas 🔸
-        skolas 🔸 Frizētavas 🔸 Skaistumkopšanas saloni 🔸 Fitnesa centri 🔸
+        Skolas 🔸 Frizētavas 🔸 Skaistumkopšanas saloni 🔸 Fitnesa centri 🔸
         Autoservisi 🔸 Viesnīcas 🔸 Bērnudārzi 🔸 Viesu nami 🔸 u.c.
       </p>
     </Layout>

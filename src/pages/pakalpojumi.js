@@ -40,7 +40,7 @@ const ServicesPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3 className="services-img-title">Dīvānu tīrīšana</h3>
@@ -57,7 +57,7 @@ const ServicesPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3 className="services-img-title">Paklāju tīrīšana</h3>
@@ -74,7 +74,7 @@ const ServicesPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3 className="services-img-title">Krēslu tīrīšana</h3>
@@ -91,7 +91,7 @@ const ServicesPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3 className="services-img-title">Matraču tīrīšana</h3>
@@ -108,7 +108,7 @@ const ServicesPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3 className="services-img-title">Auto sēdekļu tīrīšana</h3>
@@ -125,7 +125,7 @@ const ServicesPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3 className="services-img-title">

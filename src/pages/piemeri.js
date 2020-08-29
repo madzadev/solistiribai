@@ -47,7 +47,7 @@ const QualityPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
 
@@ -77,7 +77,7 @@ const QualityPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3>Pēc</h3>
@@ -94,7 +94,7 @@ const QualityPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3>Pirms</h3>
@@ -124,7 +124,7 @@ const QualityPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3>Pēc</h3>
@@ -141,7 +141,7 @@ const QualityPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3>Pirms</h3>
@@ -171,7 +171,7 @@ const QualityPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3>Pēc</h3>
@@ -188,7 +188,7 @@ const QualityPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3>Pirms</h3>
@@ -218,7 +218,7 @@ const QualityPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3>Pēc</h3>
@@ -235,7 +235,7 @@ const QualityPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3>Pirms</h3>
@@ -265,7 +265,7 @@ const QualityPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3>Pēc</h3>
@@ -282,7 +282,7 @@ const QualityPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3>Pirms</h3>
@@ -312,7 +312,7 @@ const QualityPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="none"
+              animation="fadeIn"
             />
           )}
           <h3>Pēc</h3>
