@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+
 .footer-wrapper {
   // border: 1px solid red;
   text-align: center;
@@ -8,9 +11,14 @@
   padding: 20px;
   min-height: 2.5rem;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(54, 54, 54);
+  // font-family: "Rajdhani", sans-serif;
+
   // rgb(240, 240, 240, 0.1);
   // border-top: 1px solid rgb(189, 189, 189);
-  font-weight: 500;
+  // font-weight: 700;
+  // font-size: 18px;
   // background-color: rgb(226, 226, 226);
 }
 
