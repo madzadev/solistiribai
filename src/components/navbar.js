@@ -54,6 +54,7 @@ const NavBar = () => {
         <Link
           className={openState ? "navbar-link opened" : "navbar-link"}
           activeClassName="navbar-link-active"
+          partiallyActive={true}
           to="/par-mums"
         >
           Par mums
@@ -61,6 +62,7 @@ const NavBar = () => {
         <Link
           className={openState ? "navbar-link opened" : "navbar-link"}
           activeClassName="navbar-link-active"
+          partiallyActive={true}
           to="/pakalpojumi"
         >
           Pakalpojumi
@@ -68,6 +70,7 @@ const NavBar = () => {
         <Link
           className={openState ? "navbar-link opened" : "navbar-link"}
           activeClassName="navbar-link-active"
+          partiallyActive={true}
           to="/cenas"
         >
           Cenas
@@ -75,6 +78,7 @@ const NavBar = () => {
         <Link
           className={openState ? "navbar-link opened" : "navbar-link"}
           activeClassName="navbar-link-active"
+          partiallyActive={true}
           to="/piemeri"
         >
           Piemēri
@@ -82,6 +86,7 @@ const NavBar = () => {
         <Link
           className={openState ? "navbar-link opened" : "navbar-link"}
           activeClassName="navbar-link-active"
+          partiallyActive={true}
           to="/kontakti"
         >
           Kontakti

@@ -102,22 +102,28 @@ const ContactsPage = () => {
         <div>
           <h1 className="contacts-title">Mūsu kontakti</h1>
           <div className="sazinai-wrapper">
-            <p>
+            <p className="contacts-info">
               E-pasts:{" "}
-              <a href="mailto: solis.tiribai@gmail.com">
+              <a
+                className="contacts-link"
+                href="mailto: solis.tiribai@gmail.com"
+              >
                 solis.tiribai@gmail.com
               </a>
             </p>
             <br />
-            <p>
-              Telefons: <a href="tel:+37126364882">(+371) 26 364 882</a>
+            <p className="contacts-info">
+              Telefons:{" "}
+              <a className="contacts-link" href="tel:+37126364882">
+                (+371) 26 364 882
+              </a>
             </p>
             <br />
             <div className="whatsapp-wrapper">
               <a href="https://api.whatsapp.com/send?phone=37126364882">
                 <img className="whatsapp-img" src={WhatsApp} alt="img" />
               </a>
-              <p>
+              <p className="contacts-info">
                 <a
                   className="whatsapp-link"
                   href="https://api.whatsapp.com/send?phone=37126364882"
@@ -130,7 +136,7 @@ const ContactsPage = () => {
               <a href="https://www.facebook.com/solis.tiribai/">
                 <img className="whatsapp-img" src={Facebook} alt="img" />
               </a>
-              <p>
+              <p className="contacts-info">
                 <a
                   className="whatsapp-link"
                   href="https://www.facebook.com/solis.tiribai/"
