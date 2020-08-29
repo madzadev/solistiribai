@@ -10,7 +10,8 @@ import ChairCleaning from "./../images/services/chair-cleaning.jpg"
 import MatressCleaning from "./../images/services/mattress-cleaning.jpg"
 import CarSeatCleaning from "./../images/services/car-seat-cleaning.jpg"
 import OverallCleaning from "./../images/services/overall-cleaning.jpg"
-import { LazyLoadImage } from "react-lazy-load-image-component"
+// import Loader from "./../images/loader.gif"
+// import { LazyLoadImage } from "react-lazy-load-image-component"
 // import "react-lazy-load-image-component/src/effects/blur.css"
 import ReactImageAppear from "react-image-appear"
 
@@ -28,6 +29,7 @@ const ServicesPage = () => {
             className="services-img"
             src={SofaCleaning}
             alt="img"
+            // loader={Loader}
             placeholderStyle={{
               backgroundColor: "white",
             }}
