@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
 
 .footer-wrapper {
@@ -13,6 +13,8 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   color: rgb(54, 54, 54);
+  font-weight: 500;
+  font-size: 15px;
   // font-family: "Rajdhani", sans-serif;
 
   // rgb(240, 240, 240, 0.1);
@@ -23,5 +25,5 @@
 }
 
 .contacts-link {
-  color: green;
+  color: rgb(15, 58, 199);
 }

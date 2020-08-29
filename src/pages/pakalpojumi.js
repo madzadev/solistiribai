@@ -16,6 +16,13 @@ import OverallCleaning from "./../images/services/overall-cleaning.jpg"
 import ReactImageAppear from "react-image-appear"
 
 const ServicesPage = () => {
+  // Check if initial img load
+  const isCached = src => {
+    const image = new Image()
+    image.src = src
+    return image.complete
+  }
+
   return (
     <Layout>
       <Helmet>
@@ -25,85 +32,102 @@ const ServicesPage = () => {
       <h1 className="services-title">Mūsu pakalpojumi:</h1>
       <div className="services-content">
         <div className="services-box">
-          <ReactImageAppear
-            className="services-img"
-            src={SofaCleaning}
-            alt="img"
-            // loader={Loader}
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(SofaCleaning) ? (
+            <img className="services-img" src={SofaCleaning} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="services-img"
+              src={SofaCleaning}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3 className="services-img-title">Dīvānu tīrīšana</h3>
-          {/* <p>Iznīcina putekļu ērcītes</p> */}
         </div>
         <div className="services-box">
-          <ReactImageAppear
-            className="services-img"
-            src={CarpetCleaning}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(CarpetCleaning) ? (
+            <img className="services-img" src={CarpetCleaning} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="services-img"
+              src={CarpetCleaning}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3 className="services-img-title">Paklāju tīrīšana</h3>
-          {/* <p>Lorem ipsum description</p> */}
         </div>
         <div className="services-box">
-          <ReactImageAppear
-            className="services-img"
-            src={ChairCleaning}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(ChairCleaning) ? (
+            <img className="services-img" src={ChairCleaning} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="services-img"
+              src={ChairCleaning}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3 className="services-img-title">Krēslu tīrīšana</h3>
-          {/* <p>Lorem ipsum description</p> */}
         </div>
         <div className="services-box">
-          <ReactImageAppear
-            className="services-img"
-            src={MatressCleaning}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(MatressCleaning) ? (
+            <img className="services-img" src={MatressCleaning} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="services-img"
+              src={MatressCleaning}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3 className="services-img-title">Matraču tīrīšana</h3>
-          {/* <p>Lorem ipsum description</p> */}
         </div>
         <div className="services-box">
-          <ReactImageAppear
-            className="services-img"
-            src={CarSeatCleaning}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(CarSeatCleaning) ? (
+            <img className="services-img" src={CarSeatCleaning} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="services-img"
+              src={CarSeatCleaning}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3 className="services-img-title">Auto sēdekļu tīrīšana</h3>
-          {/* <p>Lorem ipsum description</p> */}
         </div>
         <div className="services-box">
-          <ReactImageAppear
-            className="services-img"
-            src={OverallCleaning}
-            alt="img"
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
+          {isCached(OverallCleaning) ? (
+            <img className="services-img" src={OverallCleaning} alt="img" />
+          ) : (
+            <ReactImageAppear
+              className="services-img"
+              src={OverallCleaning}
+              alt="img"
+              placeholderStyle={{
+                backgroundColor: "white",
+              }}
+              animation="none"
+            />
+          )}
           <h3 className="services-img-title">
             Tīrīšanas uz uzkopšanas pakalpojumi
           </h3>
-          {/* <p>Lorem ipsum description</p> */}
         </div>
       </div>
     </Layout>

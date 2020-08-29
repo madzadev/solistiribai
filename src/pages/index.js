@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import { lazyload } from "react-lazyload"
 
 import Placeholder from "./../images/4_1.jpg"
-import BackgroundImg from "./../images/4.jpg"
+import BackgroundImg from "./../images/44.jpg"
 
 import Placeholder2 from "./../images/111_1.jpg"
 import BackgroundImg2 from "./../images/111.jpg"
@@ -41,8 +41,8 @@ const HomePage = () => {
       className="hero-wrapper"
       style={{
         width: "100%",
-        backgroundColor: `${bgColors[random]}`,
-        backgroundImage: `url(${useProgressiveImage(images[random])})`,
+        backgroundColor: `${bgColors[0]}`,
+        backgroundImage: `url(${useProgressiveImage(images[0])})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100%",

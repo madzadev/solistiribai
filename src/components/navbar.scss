@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
@@ -24,6 +24,7 @@
   font-size: 16px;
   text-decoration: none;
   color: rgb(36, 36, 36);
+  font-weight: 600;
 }
 
 .navbar-link-active {
