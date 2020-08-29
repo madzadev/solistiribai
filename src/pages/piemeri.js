@@ -26,9 +26,9 @@ const QualityPage = () => {
   const isCached = src => {
     const image = new Image()
     image.src = src
-
     return image.complete
   }
+
   return (
     <Layout>
       <Helmet>
@@ -48,7 +48,7 @@ const QualityPage = () => {
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation={false}
+              animation="none"
             />
           )}
 
