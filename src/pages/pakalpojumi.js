@@ -23,6 +23,7 @@ const ServicesPage = () => {
   return (
     <Layout>
       <Helmet>
+        <html lang="lv" />
         <title>Pakalpojumi | Solis Tīrībai</title>
       </Helmet>
 

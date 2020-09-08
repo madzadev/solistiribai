@@ -95,6 +95,7 @@ const ContactsPage = () => {
   return (
     <Layout>
       <Helmet>
+        <html lang="lv" />
         <title>Kontakti | Solis Tīrībai</title>
       </Helmet>
 

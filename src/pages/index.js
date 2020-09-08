@@ -46,6 +46,7 @@ const HomePage = () => {
     >
       <Layout>
         <Helmet>
+          <html lang="lv" />
           <title>Sākums | Solis Tīrībai</title>
         </Helmet>
 

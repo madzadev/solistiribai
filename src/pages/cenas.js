@@ -11,6 +11,7 @@ const PricesPage = () => {
   return (
     <Layout>
       <Helmet>
+        <html lang="lv" />
         <title>Cenas | Solis Tīrībai</title>
       </Helmet>
 

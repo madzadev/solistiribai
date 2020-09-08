@@ -7,6 +7,7 @@ const ErrorPage = () => {
   return (
     <Layout>
       <Helmet>
+        <html lang="lv" />
         <title>Kļūda 404 | Solis Tīrībai</title>
       </Helmet>
       <h1>Atvainojiet Jūs meklētā lapa ir dzēsta vai pārvietota!</h1>

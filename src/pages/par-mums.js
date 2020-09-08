@@ -32,6 +32,7 @@ const AboutUsPage = () => {
   return (
     <Layout>
       <Helmet>
+        <html lang="lv" />
         <title>Par mums | Solis Tīrībai</title>
         <script
           async

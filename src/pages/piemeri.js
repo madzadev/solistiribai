@@ -31,6 +31,7 @@ const QualityPage = () => {
   return (
     <Layout>
       <Helmet>
+        <html lang="lv" />
         <title>Piemēri | Solis Tīrībai</title>
       </Helmet>
       <h1 className="quality-title">Paveiktie darbi:</h1>
