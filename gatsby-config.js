@@ -6,15 +6,14 @@
 
 module.exports = {
   /* Your site config here */
-  // siteMetadata: {
-  //   siteUrl: `https://www.solistiribai.netlify.appa`,
-  // },
+  siteMetadata: {
+    siteUrl: `https://www.solistiribai.netlify.app`,
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-remove-trailing-slashes`,
-
-    // `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
   ],
   proxy: {
     prefix: "/contact",

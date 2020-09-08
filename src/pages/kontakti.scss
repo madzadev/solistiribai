@@ -109,6 +109,12 @@ textarea {
   font-size: 18px;
   border: none;
   font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.contact-btn:hover {
+  background-color: #239e4c;
+  transform: scale(1.01);
 }
 
 .contact-btn:hover {

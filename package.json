@@ -17,6 +17,7 @@
     "axios": "^0.20.0",
     "gatsby": "^2.24.26",
     "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-robots-txt": "^1.5.1",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sitemap": "^2.4.12",
     "is-empty": "^1.2.0",
@@ -28,7 +29,6 @@
     "validator": "^13.1.1"
   },
   "devDependencies": {
-    "gatsby-plugin-remove-trailing-slashes": "^2.3.11",
     "prettier": "2.0.5"
   },
   "repository": {
