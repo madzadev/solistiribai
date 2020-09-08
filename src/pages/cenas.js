@@ -5,14 +5,13 @@ import { Link } from "gatsby"
 import Layout from "./../components/layout"
 import "./cenas.scss"
 
-import Warning from "./../images/warning3.png"
-
 const PricesPage = () => {
   return (
     <Layout>
       <Helmet>
         <html lang="lv" />
         <title>Cenas | Solis Tīrībai</title>
+        <description>Apraksts</description>
       </Helmet>
 
       <h1 className="prices-title">Mūsu izcenojumi:</h1>

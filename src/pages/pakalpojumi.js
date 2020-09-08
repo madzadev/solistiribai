@@ -25,6 +25,7 @@ const ServicesPage = () => {
       <Helmet>
         <html lang="lv" />
         <title>Pakalpojumi | Solis Tīrībai</title>
+        <description>Apraksts</description>
       </Helmet>
 
       <h1 className="services-title">Mūsu pakalpojumi:</h1>

@@ -48,6 +48,7 @@ const HomePage = () => {
         <Helmet>
           <html lang="lv" />
           <title>Sākums | Solis Tīrībai</title>
+          <description>Apraksts</description>
         </Helmet>
 
         <div className="hero-content">

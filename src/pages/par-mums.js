@@ -1,13 +1,9 @@
-import React, { useLayoutEffect, useState, useEffect } from "react"
+import React, { useLayoutEffect, useState } from "react"
 import Helmet from "react-helmet"
 
 import Layout from "../components/layout"
 import "./par-mums.scss"
 import Tick from "./../images/tick.png"
-import Mother from "./../images/mother.png"
-import School from "./../images/school.png"
-
-// import aboutImage from "./../images/cleaner-girl.png"
 
 const AboutUsPage = () => {
   const [size, setSize] = useState([0, 0])
@@ -19,14 +15,6 @@ const AboutUsPage = () => {
     updateSize()
     return () => window.removeEventListener("resize", updateSize)
   }, [])
-
-  // useEffect(() => {
-  //   // window.FB.XFBML.parse()
-  //   // console.log("fired")
-  // // }, [size])
-
-  // window.FB.XFBML.parse()
-  // console.log(size)
 
   console.log(size[0])
   return (
@@ -69,19 +57,6 @@ const AboutUsPage = () => {
             <img src={Tick} alt="" />
             <p>Dezinfekcija - pēc klienta vēlēšanās</p>
           </div>
-
-          {/* <div className="about-reason">
-            <img src={People} alt="" />
-            <p>
-              Sadarbojamies ar privātpersonām un uzņēmumiem, tai skaitā skolām,
-              viesnīcām, restorāniem, autoservisiem, uc.
-            </p>
-          </div>
-
-          <div className="about-reason">
-            <img src={Truck} alt="" />
-            <p>Bezmaksas izbraukšana pie klienta dzīvesvietā</p>
-          </div> */}
         </div>
         <div className="about-image">
           <iframe
