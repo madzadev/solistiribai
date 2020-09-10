@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // border: 1px solid red;
-  // border-bottom: 1px solid #0b4f6c;
-  // color: #020202;
-  // background-color: #f7f7f7;
   padding: 10px;
 }
 
@@ -40,17 +37,13 @@
   grid-template-columns: 1fr auto;
   column-gap: 10px;
   font-family: "Rajdhani", sans-serif;
-  // position: absolute;
   margin-left: 15px;
 }
 
 .logo-name-wrapper {
-  // text-align: center;
   color: black;
   display: grid;
   place-items: center start;
-  // font-size: 14px;
-  // text-align: left;
 }
 
 // Link that should open on small screens
@@ -59,7 +52,6 @@
 }
 
 .opened {
-  // color: red;
   display: block;
   background-color: rgb(230, 230, 230);
   text-align: end;

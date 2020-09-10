@@ -17,7 +17,6 @@
 .about-reason {
   display: grid;
   grid-template-columns: 1fr 9fr;
-  // place-items: start;
   align-items: center;
 }
 
@@ -34,26 +33,8 @@
   text-align: center;
 }
 
-// .about-clients-box img {
-//   width: 70px;
-// }
-
-// @media screen and (max-width: 1000px) {
-//   .about-clients-wrapper {
-//     grid-template-columns: repeat(3, 1fr);
-//   }
-// }
-// iframe {
-//   width: 100% !important;
-//   //   overflow: hidden;
-//   //   height: auto;
-//   // }
-// }
 @media screen and (max-width: 635px) {
   iframe {
     width: 100% !important;
-    //   overflow: hidden;
-    //   height: auto;
-    // }
   }
 }

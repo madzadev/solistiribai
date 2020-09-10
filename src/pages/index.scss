@@ -14,7 +14,6 @@
   display: grid;
   grid-template-columns: minmax(450px, 800px) minmax(200px, 500px);
   column-gap: 40px;
-  // height: 300px;
 }
 
 .hero-title {
@@ -28,33 +27,22 @@
 
 .hero-description {
   font-size: 18px;
-  // text-align: justify;
-  // text-justify: inter-word;
-  // font-weight: 600;
 }
 
 .hero-btn {
-  // font-family: "Montserrat", sans-serif;
   width: 200px;
   height: 50px;
-  // border: 1px solid blueviolet;
   border-radius: 20px;
   margin: 10px;
   font-size: 18px;
-  // font-weight: 600;
-  // padding: 10px;
   align-items: center;
-
-  // display: inline-block;
   text-decoration: none;
   display: inline-grid;
   place-items: center;
   background-color: #20bf55;
   color: white;
   margin-top: 40px;
-  // border: 2px solid green;
   transition: transform 0.2s;
-
   font-weight: 500;
 }
 
@@ -79,19 +67,14 @@
 
 .hero-img {
   width: 100%;
-  // float: left;
 }
 
 @media screen and (max-width: 1000px) {
   .hero-content {
-    // display: grid;
     grid-template-columns: 1fr;
-    // column-gap: 10px;
   }
 
   .hero-img {
-    // width: 50%;
-    // float: right;
     display: none;
   }
 

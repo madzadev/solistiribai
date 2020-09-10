@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
 
 .footer-wrapper {
-  // border: 1px solid red;
   text-align: center;
   position: absolute;
   bottom: 0;
-  // left: 0;
   width: 100%;
   padding: 20px;
   min-height: 2.5rem;
@@ -15,13 +12,6 @@
   color: rgb(0, 0, 0);
   font-weight: 500;
   font-size: 15px;
-  // font-family: "Rajdhani", sans-serif;
-
-  // rgb(240, 240, 240, 0.1);
-  // border-top: 1px solid rgb(189, 189, 189);
-  // font-weight: 700;
-  // font-size: 18px;
-  // background-color: rgb(226, 226, 226);
 }
 
 .contacts-link {

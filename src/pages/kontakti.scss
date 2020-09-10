@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap");
 
-// html {
-//   background-image: url("./../images/dd.jpg");
-//   background-size: cover;
-//   background-position: center;
-//   height: 100%;
-//   background-repeat: no-repeat;
-// }
-
 .contacts-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -33,14 +25,10 @@
 .whatsapp-wrapper {
   width: 100%;
   height: 50px;
-  // background-color: #20bf55;
-  // color: white;
   border-radius: 20px;
-  // padding: 10px;
   display: grid;
   grid-template-columns: 1fr 12fr;
   column-gap: 10px;
-  // padding: 0 10px;
   font-size: 18px;
   align-items: center;
 }
@@ -53,7 +41,6 @@
 .whatsapp-link {
   text-decoration: none;
   color: black;
-  // color: white;
 }
 
 .sazinai-wrapper {
@@ -68,7 +55,6 @@ input {
   display: block;
   width: 100%;
   height: 40px;
-  //   border-radius: 10px;
   background-color: rgb(240, 240, 240);
   padding: 5px 10px;
   border: none;
