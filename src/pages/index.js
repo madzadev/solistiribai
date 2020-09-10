@@ -7,21 +7,19 @@ import BackgroundImg from "./../images/444.jpg"
 import Layout from "./../components/layout"
 import "./index.scss"
 
-const bgColors = ["#FBFBFB", "#F0F0F0"]
-
 const HomePage = () => {
   // Img load check
-  const useProgressiveImage = src => {
-    const [sourceLoaded, setSourceLoaded] = useState(null)
+  // const useProgressiveImage = src => {
+  //   const [sourceLoaded, setSourceLoaded] = useState(null)
 
-    useEffect(() => {
-      const img = new Image()
-      img.src = src
-      img.onload = () => setSourceLoaded(src)
-    }, [src])
+  //   useEffect(() => {
+  //     const img = new Image()
+  //     img.src = src
+  //     img.onload = () => setSourceLoaded(src)
+  //   }, [src])
 
-    return sourceLoaded
-  }
+  //   return sourceLoaded
+  // }
 
   // Get screen width, to decide wether to show hero img
   const [width, setWidth] = useState(window.innerWidth)
@@ -33,15 +31,13 @@ const HomePage = () => {
     return () => window.removeEventListener("resize", updateDimensions)
   }, [])
 
-  console.log(width)
-
   return (
     <div
       className="hero-wrapper"
       style={{
         width: "100%",
-        backgroundColor: `${bgColors[0]}`,
-        backgroundImage: `url(${useProgressiveImage(BackgroundImg)})`,
+        backgroundColor: `#FBFBFB`,
+        backgroundImage: `url(${width > 540 ? BackgroundImg : ""})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100%",
@@ -75,10 +71,7 @@ const HomePage = () => {
               Nodrošinām izbraukšanu pie klienta dzīvesvietā!
             </p>
           </div>
-          <div className="hero-img-panel">
-            {/* <img src={image} className="hero-img" alt="img" /> */}
-            {/* <SlideShow /> */}
-          </div>
+          <div className="hero-img-panel"></div>
         </div>
         <Link to="/par-mums" className="hero-btn first">
           Uzzināt vairāk
