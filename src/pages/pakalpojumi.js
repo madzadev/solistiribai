@@ -15,11 +15,11 @@ import OverallCleaning from "./../images/services/overall-cleaning.jpg"
 const ServicesPage = () => {
   // Check if initial img load
 
-  const isCached = src => {
-    const image = new Image()
-    image.src = src
-    return image.complete
-  }
+  // const isCached = src => {
+  //   const image = new Image()
+  //   image.src = src
+  //   return image.complete
+  // }
 
   return (
     <Layout>
@@ -29,7 +29,7 @@ const ServicesPage = () => {
         <description>Apraksts</description>
       </Helmet>
 
-      <h1 className="services-title">Mūsu pakalpojumi:</h1>
+      {/* <h1 className="services-title">Mūsu pakalpojumi:</h1>
       <div className="services-content">
         <div className="services-box">
           {isCached(SofaCleaning) ? (
@@ -135,7 +135,7 @@ const ServicesPage = () => {
             Tīrīšanas uz uzkopšanas pakalpojumi
           </h3>
         </div>
-      </div>
+      </div> */}
     </Layout>
   )
 }

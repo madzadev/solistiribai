@@ -22,11 +22,11 @@ import ArrowRight from "./../images/arrow-right.png"
 
 const QualityPage = () => {
   // Check if initial img load
-  const isCached = src => {
-    const image = new Image()
-    image.src = src
-    return image.complete
-  }
+  // const isCached = src => {
+  //   const image = new Image()
+  //   image.src = src
+  //   return image.complete
+  // }
 
   return (
     <Layout>
@@ -36,7 +36,7 @@ const QualityPage = () => {
         <description>Apraksts</description>
       </Helmet>
       <h1 className="quality-title">Paveiktie darbi:</h1>
-      <div className="gallery-content">
+      {/* <div className="gallery-content">
         <div className="quality-box">
           {isCached(SofaBefore) ? (
             <img className="quality-img" src={SofaBefore} alt="img" />
@@ -319,7 +319,7 @@ const QualityPage = () => {
           )}
           <h3>Pēc</h3>
         </div>
-      </div>
+      </div> */}
     </Layout>
   )
 }
