@@ -22,14 +22,16 @@ const HomePage = () => {
   // }
 
   // Get screen width, to decide wether to show hero img
-  const [width, setWidth] = useState(window.innerWidth)
-  const updateDimensions = () => {
-    setWidth(window.innerWidth)
-  }
-  useEffect(() => {
-    window.addEventListener("resize", updateDimensions)
-    return () => window.removeEventListener("resize", updateDimensions)
-  }, [])
+
+  // const [width, setWidth] = useState(window.innerWidth)
+  // const updateDimensions = () => {
+  //   setWidth(window.innerWidth)
+  // }
+
+  // useEffect(() => {
+  //   window.addEventListener("resize", updateDimensions)
+  //   return () => window.removeEventListener("resize", updateDimensions)
+  // }, [])
 
   return (
     <div
@@ -37,7 +39,7 @@ const HomePage = () => {
       style={{
         width: "100%",
         backgroundColor: `#FBFBFB`,
-        backgroundImage: `url(${width > 540 ? BackgroundImg : ""})`,
+        backgroundImage: `url(${BackgroundImg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100%",
