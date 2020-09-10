@@ -97,37 +97,6 @@ const AboutUsPage = () => {
       <br />
 
       <h1 className="about-title">Solis Tīrībai klienti:</h1>
-      {/* <div className="about-clients-wrapper">
-        <div className="about-clients-box">
-          <img src={Mother} alt="" />
-          <p>Privātpersonas</p>
-        </div>
-        <div className="about-clients-box">
-          {" "}
-          <img src={School} alt="" />
-          <p>Skolas</p>
-        </div>
-        <div className="about-clients-box">
-          {" "}
-          <img src={Tick} alt="" />
-          <p>Viesnīcas</p>
-        </div>
-        <div className="about-clients-box">
-          {" "}
-          <img src={Tick} alt="" />
-          <p>Sporta centri</p>
-        </div>
-        <div className="about-clients-box">
-          {" "}
-          <img src={Tick} alt="" />
-          <p>Auto servisi</p>
-        </div>
-        <div className="about-clients-box">
-          {" "}
-          <img src={Tick} alt="" />
-          <p>u.c.</p>
-        </div>
-      </div> */}
 
       <p>
         🔸 Privātpersonas 🔸 Restorāni 🔸 Banketu zāles 🔸 Internātskolas 🔸
