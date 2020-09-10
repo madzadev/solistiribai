@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Helmet from "react-helmet"
 import ReactImageAppear from "react-image-appear"
 
@@ -22,306 +22,308 @@ import ArrowRight from "./../images/arrow-right.png"
 
 const QualityPage = () => {
   // Check if initial img load
-  // const isCached = src => {
-  //   const image = new Image()
-  //   image.src = src
-  //   return image.complete
-  // }
+  useEffect(() => {
+    const isCached = src => {
+      const image = new Image()
+      image.src = src
+      return image.complete
+    }
 
-  return (
-    <Layout>
-      <Helmet>
-        <html lang="lv" />
-        <title>Piemēri | Solis Tīrībai</title>
-        <description>Apraksts</description>
-      </Helmet>
-      <h1 className="quality-title">Paveiktie darbi:</h1>
-      {/* <div className="gallery-content">
-        <div className="quality-box">
-          {isCached(SofaBefore) ? (
-            <img className="quality-img" src={SofaBefore} alt="img" />
-          ) : (
-            <ReactImageAppear
-              className="quality-img"
-              src={SofaBefore}
-              alt="img"
-              placeholder="none"
-              placeholderStyle={{
-                backgroundColor: "white",
-              }}
-              animation="fadeIn"
-            />
-          )}
+    return (
+      <Layout>
+        <Helmet>
+          <html lang="lv" />
+          <title>Piemēri | Solis Tīrībai</title>
+          <description>Apraksts</description>
+        </Helmet>
+        <h1 className="quality-title">Paveiktie darbi:</h1>
+        <div className="gallery-content">
+          <div className="quality-box">
+            {isCached(SofaBefore) ? (
+              <img className="quality-img" src={SofaBefore} alt="img" />
+            ) : (
+              <ReactImageAppear
+                className="quality-img"
+                src={SofaBefore}
+                alt="img"
+                placeholder="none"
+                placeholderStyle={{
+                  backgroundColor: "white",
+                }}
+                animation="fadeIn"
+              />
+            )}
 
-          <h3>Pirms</h3>
-        </div>
-        <div className="arrow-box">
-          <h4>Solis Tīrībai</h4>
-          <ReactImageAppear
-            className="arrow-right"
-            src={ArrowRight}
-            alt=""
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
-        </div>
-        <div className="quality-box">
-          {isCached(SofaAfter) ? (
-            <img className="quality-img" src={SofaAfter} alt="img" />
-          ) : (
+            <h3>Pirms</h3>
+          </div>
+          <div className="arrow-box">
+            <h4>Solis Tīrībai</h4>
             <ReactImageAppear
-              className="quality-img"
-              src={SofaAfter}
-              alt="img"
-              placeholder="none"
+              className="arrow-right"
+              src={ArrowRight}
+              alt=""
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="fadeIn"
+              animation="none"
             />
-          )}
-          <h3>Pēc</h3>
-        </div>
-        <div className="quality-box">
-          {isCached(CarpetBefore) ? (
-            <img className="quality-img" src={CarpetBefore} alt="img" />
-          ) : (
-            <ReactImageAppear
-              className="quality-img"
-              src={CarpetBefore}
-              alt="img"
-              placeholder="none"
-              placeholderStyle={{
-                backgroundColor: "white",
-              }}
-              animation="fadeIn"
-            />
-          )}
-          <h3>Pirms</h3>
-        </div>
-        <div className="arrow-box">
-          <h4>Solis Tīrībai</h4>
+          </div>
+          <div className="quality-box">
+            {isCached(SofaAfter) ? (
+              <img className="quality-img" src={SofaAfter} alt="img" />
+            ) : (
+              <ReactImageAppear
+                className="quality-img"
+                src={SofaAfter}
+                alt="img"
+                placeholder="none"
+                placeholderStyle={{
+                  backgroundColor: "white",
+                }}
+                animation="fadeIn"
+              />
+            )}
+            <h3>Pēc</h3>
+          </div>
+          <div className="quality-box">
+            {isCached(CarpetBefore) ? (
+              <img className="quality-img" src={CarpetBefore} alt="img" />
+            ) : (
+              <ReactImageAppear
+                className="quality-img"
+                src={CarpetBefore}
+                alt="img"
+                placeholder="none"
+                placeholderStyle={{
+                  backgroundColor: "white",
+                }}
+                animation="fadeIn"
+              />
+            )}
+            <h3>Pirms</h3>
+          </div>
+          <div className="arrow-box">
+            <h4>Solis Tīrībai</h4>
 
-          <ReactImageAppear
-            className="arrow-right"
-            src={ArrowRight}
-            alt=""
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
-        </div>
-        <div className="quality-box">
-          {isCached(CarpetAfter) ? (
-            <img className="quality-img" src={CarpetAfter} alt="img" />
-          ) : (
             <ReactImageAppear
-              className="quality-img"
-              src={CarpetAfter}
-              alt="img"
-              placeholder="none"
+              className="arrow-right"
+              src={ArrowRight}
+              alt=""
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="fadeIn"
+              animation="none"
             />
-          )}
-          <h3>Pēc</h3>
-        </div>
-        <div className="quality-box">
-          {isCached(SeatBefore) ? (
-            <img className="quality-img" src={SeatBefore} alt="img" />
-          ) : (
-            <ReactImageAppear
-              className="quality-img"
-              src={SeatBefore}
-              alt="img"
-              placeholder="none"
-              placeholderStyle={{
-                backgroundColor: "white",
-              }}
-              animation="fadeIn"
-            />
-          )}
-          <h3>Pirms</h3>
-        </div>
-        <div className="arrow-box">
-          <h4>Solis Tīrībai</h4>
+          </div>
+          <div className="quality-box">
+            {isCached(CarpetAfter) ? (
+              <img className="quality-img" src={CarpetAfter} alt="img" />
+            ) : (
+              <ReactImageAppear
+                className="quality-img"
+                src={CarpetAfter}
+                alt="img"
+                placeholder="none"
+                placeholderStyle={{
+                  backgroundColor: "white",
+                }}
+                animation="fadeIn"
+              />
+            )}
+            <h3>Pēc</h3>
+          </div>
+          <div className="quality-box">
+            {isCached(SeatBefore) ? (
+              <img className="quality-img" src={SeatBefore} alt="img" />
+            ) : (
+              <ReactImageAppear
+                className="quality-img"
+                src={SeatBefore}
+                alt="img"
+                placeholder="none"
+                placeholderStyle={{
+                  backgroundColor: "white",
+                }}
+                animation="fadeIn"
+              />
+            )}
+            <h3>Pirms</h3>
+          </div>
+          <div className="arrow-box">
+            <h4>Solis Tīrībai</h4>
 
-          <ReactImageAppear
-            className="arrow-right"
-            src={ArrowRight}
-            alt=""
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
-        </div>
-        <div className="quality-box">
-          {isCached(SeatAfter) ? (
-            <img className="quality-img" src={SeatAfter} alt="img" />
-          ) : (
             <ReactImageAppear
-              className="quality-img"
-              src={SeatAfter}
-              alt="img"
-              placeholder="none"
+              className="arrow-right"
+              src={ArrowRight}
+              alt=""
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="fadeIn"
+              animation="none"
             />
-          )}
-          <h3>Pēc</h3>
-        </div>
-        <div className="quality-box">
-          {isCached(BedBefore) ? (
-            <img className="quality-img" src={BedBefore} alt="img" />
-          ) : (
-            <ReactImageAppear
-              className="quality-img"
-              src={BedBefore}
-              alt="img"
-              placeholder="none"
-              placeholderStyle={{
-                backgroundColor: "white",
-              }}
-              animation="fadeIn"
-            />
-          )}
-          <h3>Pirms</h3>
-        </div>
-        <div className="arrow-box">
-          <h4>Solis Tīrībai</h4>
+          </div>
+          <div className="quality-box">
+            {isCached(SeatAfter) ? (
+              <img className="quality-img" src={SeatAfter} alt="img" />
+            ) : (
+              <ReactImageAppear
+                className="quality-img"
+                src={SeatAfter}
+                alt="img"
+                placeholder="none"
+                placeholderStyle={{
+                  backgroundColor: "white",
+                }}
+                animation="fadeIn"
+              />
+            )}
+            <h3>Pēc</h3>
+          </div>
+          <div className="quality-box">
+            {isCached(BedBefore) ? (
+              <img className="quality-img" src={BedBefore} alt="img" />
+            ) : (
+              <ReactImageAppear
+                className="quality-img"
+                src={BedBefore}
+                alt="img"
+                placeholder="none"
+                placeholderStyle={{
+                  backgroundColor: "white",
+                }}
+                animation="fadeIn"
+              />
+            )}
+            <h3>Pirms</h3>
+          </div>
+          <div className="arrow-box">
+            <h4>Solis Tīrībai</h4>
 
-          <ReactImageAppear
-            className="arrow-right"
-            src={ArrowRight}
-            alt=""
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
-        </div>
-        <div className="quality-box">
-          {isCached(BedAfter) ? (
-            <img className="quality-img" src={BedAfter} alt="img" />
-          ) : (
             <ReactImageAppear
-              className="quality-img"
-              src={BedAfter}
-              alt="img"
-              placeholder="none"
+              className="arrow-right"
+              src={ArrowRight}
+              alt=""
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="fadeIn"
+              animation="none"
             />
-          )}
-          <h3>Pēc</h3>
-        </div>
-        <div className="quality-box">
-          {isCached(ChairBefore) ? (
-            <img className="quality-img" src={ChairBefore} alt="img" />
-          ) : (
-            <ReactImageAppear
-              className="quality-img"
-              src={ChairBefore}
-              alt="img"
-              placeholder="none"
-              placeholderStyle={{
-                backgroundColor: "white",
-              }}
-              animation="fadeIn"
-            />
-          )}
-          <h3>Pirms</h3>
-        </div>
-        <div className="arrow-box">
-          <h4>Solis Tīrībai</h4>
+          </div>
+          <div className="quality-box">
+            {isCached(BedAfter) ? (
+              <img className="quality-img" src={BedAfter} alt="img" />
+            ) : (
+              <ReactImageAppear
+                className="quality-img"
+                src={BedAfter}
+                alt="img"
+                placeholder="none"
+                placeholderStyle={{
+                  backgroundColor: "white",
+                }}
+                animation="fadeIn"
+              />
+            )}
+            <h3>Pēc</h3>
+          </div>
+          <div className="quality-box">
+            {isCached(ChairBefore) ? (
+              <img className="quality-img" src={ChairBefore} alt="img" />
+            ) : (
+              <ReactImageAppear
+                className="quality-img"
+                src={ChairBefore}
+                alt="img"
+                placeholder="none"
+                placeholderStyle={{
+                  backgroundColor: "white",
+                }}
+                animation="fadeIn"
+              />
+            )}
+            <h3>Pirms</h3>
+          </div>
+          <div className="arrow-box">
+            <h4>Solis Tīrībai</h4>
 
-          <ReactImageAppear
-            className="arrow-right"
-            src={ArrowRight}
-            alt=""
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
-        </div>
-        <div className="quality-box">
-          {isCached(ChairAfter) ? (
-            <img className="quality-img" src={ChairAfter} alt="img" />
-          ) : (
             <ReactImageAppear
-              className="quality-img"
-              src={ChairAfter}
-              alt="img"
-              placeholder="none"
+              className="arrow-right"
+              src={ArrowRight}
+              alt=""
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="fadeIn"
+              animation="none"
             />
-          )}
-          <h3>Pēc</h3>
-        </div>
-        <div className="quality-box">
-          {isCached(Sofa2Before) ? (
-            <img className="quality-img" src={Sofa2Before} alt="img" />
-          ) : (
-            <ReactImageAppear
-              className="quality-img"
-              src={Sofa2Before}
-              alt="img"
-              placeholder="none"
-              placeholderStyle={{
-                backgroundColor: "white",
-              }}
-              animation="fadeIn"
-            />
-          )}
-          <h3>Pirms</h3>
-        </div>
-        <div className="arrow-box">
-          <h4>Solis Tīrībai</h4>
+          </div>
+          <div className="quality-box">
+            {isCached(ChairAfter) ? (
+              <img className="quality-img" src={ChairAfter} alt="img" />
+            ) : (
+              <ReactImageAppear
+                className="quality-img"
+                src={ChairAfter}
+                alt="img"
+                placeholder="none"
+                placeholderStyle={{
+                  backgroundColor: "white",
+                }}
+                animation="fadeIn"
+              />
+            )}
+            <h3>Pēc</h3>
+          </div>
+          <div className="quality-box">
+            {isCached(Sofa2Before) ? (
+              <img className="quality-img" src={Sofa2Before} alt="img" />
+            ) : (
+              <ReactImageAppear
+                className="quality-img"
+                src={Sofa2Before}
+                alt="img"
+                placeholder="none"
+                placeholderStyle={{
+                  backgroundColor: "white",
+                }}
+                animation="fadeIn"
+              />
+            )}
+            <h3>Pirms</h3>
+          </div>
+          <div className="arrow-box">
+            <h4>Solis Tīrībai</h4>
 
-          <ReactImageAppear
-            className="arrow-right"
-            src={ArrowRight}
-            alt=""
-            placeholderStyle={{
-              backgroundColor: "white",
-            }}
-            animation="none"
-          />
-        </div>
-        <div className="quality-box">
-          {isCached(Sofa2After) ? (
-            <img className="quality-img" src={Sofa2After} alt="img" />
-          ) : (
             <ReactImageAppear
-              className="quality-img"
-              src={Sofa2After}
-              alt="img"
-              placeholder="none"
+              className="arrow-right"
+              src={ArrowRight}
+              alt=""
               placeholderStyle={{
                 backgroundColor: "white",
               }}
-              animation="fadeIn"
+              animation="none"
             />
-          )}
-          <h3>Pēc</h3>
+          </div>
+          <div className="quality-box">
+            {isCached(Sofa2After) ? (
+              <img className="quality-img" src={Sofa2After} alt="img" />
+            ) : (
+              <ReactImageAppear
+                className="quality-img"
+                src={Sofa2After}
+                alt="img"
+                placeholder="none"
+                placeholderStyle={{
+                  backgroundColor: "white",
+                }}
+                animation="fadeIn"
+              />
+            )}
+            <h3>Pēc</h3>
+          </div>
         </div>
-      </div> */}
-    </Layout>
-  )
+      </Layout>
+    )
+  })
 }
 
 export default QualityPage

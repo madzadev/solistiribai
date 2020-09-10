@@ -15,11 +15,11 @@ import OverallCleaning from "./../images/services/overall-cleaning.jpg"
 const ServicesPage = () => {
   // Check if initial img load
 
-  // const isCached = src => {
-  //   const image = new Image()
-  //   image.src = src
-  //   return image.complete
-  // }
+  const isCached = src => {
+    const image = new Image()
+    image.src = src
+    return image.complete
+  }
 
   return (
     <Layout>
