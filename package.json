@@ -2,7 +2,7 @@
   "name": "solis-tiribai-conf-json",
   "private": true,
   "description": "Solis Tīrībai ir mājaslapa tīrīšanas un uzkopšanas pakalpojumiem",
-  "version": "1.0",
+  "version": "0.0.1",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
