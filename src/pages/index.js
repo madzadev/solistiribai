@@ -28,7 +28,7 @@ const HomePage = () => {
   useEffect(() => {
     // set width on initial load
     setWidth(window.innerWidth)
-
+    console.log(window.innerWidth)
     // update on screen changes
     const updateDimensions = () => {
       setWidth(window.innerWidth)

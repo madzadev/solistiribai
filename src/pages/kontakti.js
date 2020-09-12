@@ -160,6 +160,7 @@ const ContactsPage = () => {
                     id="name"
                     type="text"
                     name="name"
+                    autocomplete="off"
                     className={name.error ? "alert-border" : ""}
                     onChange={e =>
                       setName({ ...name, value: e.target.value, error: "" })
@@ -174,6 +175,7 @@ const ContactsPage = () => {
                     id="email"
                     type="text"
                     name="email"
+                    autocomplete="off"
                     className={email.error ? "alert-border" : ""}
                     onChange={e =>
                       setEmail({ ...email, value: e.target.value, error: "" })
@@ -188,6 +190,7 @@ const ContactsPage = () => {
                     id="phone"
                     type="text"
                     name="phone"
+                    autocomplete="off"
                     onChange={e => setPhone(e.target.value)}
                   />
                   <p className="contacts-error-message"> </p>
