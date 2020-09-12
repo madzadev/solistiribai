@@ -22,24 +22,24 @@ import ArrowRight from "./../images/arrow-right.png"
 
 const QualityPage = () => {
   // Check if initial img load
-  useEffect(() => {
-    const isCached = src => {
-      const image = new Image()
-      image.src = src
-      return image.complete
-    }
+  // useEffect(() => {
+  //   const isCached = src => {
+  //     const image = new Image()
+  //     image.src = src
+  //     return image.complete
+  //   }
 
-    return (
-      <Layout>
-        <Helmet>
-          <html lang="lv" />
-          <title>Piemēri | Solis Tīrībai</title>
-          <description>Apraksts</description>
-        </Helmet>
-        <h1 className="quality-title">Paveiktie darbi:</h1>
-        <div className="gallery-content">
-          <div className="quality-box">
-            {isCached(SofaBefore) ? (
+  return (
+    <Layout>
+      <Helmet>
+        <html lang="lv" />
+        <title>Piemēri | Solis Tīrībai</title>
+        <description>Apraksts</description>
+      </Helmet>
+      <h1 className="quality-title">Paveiktie darbi:</h1>
+      <div className="gallery-content">
+        <div className="quality-box">
+          {/* {isCached(SofaBefore) ? (
               <img className="quality-img" src={SofaBefore} alt="img" />
             ) : (
               <ReactImageAppear
@@ -318,12 +318,12 @@ const QualityPage = () => {
                 animation="fadeIn"
               />
             )}
-            <h3>Pēc</h3>
-          </div>
+            <h3>Pēc</h3> */}
         </div>
-      </Layout>
-    )
-  })
+      </div>
+    </Layout>
+  )
+  // })
 }
 
 export default QualityPage
