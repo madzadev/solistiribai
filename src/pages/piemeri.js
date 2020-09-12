@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import Helmet from "react-helmet"
-import ReactImageAppear from "react-image-appear"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -350,19 +349,19 @@ const QualityPage = ({ data }) => {
   // })
 }
 
-export const query = graphql`
-  query {
-    allImageSharp {
-      edges {
-        node {
-          id
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query {
+//     allImageSharp {
+//       edges {
+//         node {
+//           id
+//           fluid(maxWidth: 500) {
+//             ...GatsbyImageSharpFluid
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 export default QualityPage

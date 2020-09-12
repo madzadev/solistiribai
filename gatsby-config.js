@@ -48,7 +48,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
-      options: { path: `./src/images/quality` },
+      options: { path: `./src/images/services` },
     },
   ],
   proxy: {
