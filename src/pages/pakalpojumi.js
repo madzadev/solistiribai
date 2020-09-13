@@ -26,10 +26,6 @@ const ServicesPage = ({ data }) => {
 
       <h1 className="services-title">Mūsu pakalpojumi:</h1>
       <div className="services-content">
-        {/* <Img
-          fluid={data.dog.childImageSharp.fluid}
-          alt="This is a picture of my face."
-        /> */}
         {data.allFile.edges.map((el, index) => (
           <div className="services-box">
             {console.log(el)}
