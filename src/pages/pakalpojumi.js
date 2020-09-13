@@ -30,13 +30,14 @@ const ServicesPage = ({ data }) => {
           fluid={data.dog.childImageSharp.fluid}
           alt="This is a picture of my face."
         /> */}
-        {data.allFile.edges.map((node, index) => (
+        {data.allFile.edges.map((el, index) => (
           <div className="services-box">
-            {/* <Img
+            {console.log(el)}
+            <Img
               className="services-img"
-              fluid={node.childImageSharp.fluid}
+              fluid={el.node.childImageSharp.fluid}
               alt="img"
-            /> */}
+            />
             <h3 className="services-img-title">{services[index]}</h3>
           </div>
         ))}
@@ -55,6 +56,7 @@ export const query = graphql`
           childImageSharp {
             fluid(maxWidth: 600, quality: 100) {
               ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluidLimitPresentationSize
             }
           }
         }
