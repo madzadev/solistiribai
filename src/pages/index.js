@@ -8,19 +8,19 @@ import Layout from "./../components/layout"
 import "./index.scss"
 
 const HomePage = ({ data }) => {
-  const [width, setWidth] = useState(null)
+  // const [width, setWidth] = useState(null)
 
-  useEffect(() => {
-    // set width on initial load
-    setWidth(window.innerWidth)
-    console.log(window.innerWidth)
-    // update on screen changes
-    const updateDimensions = () => {
-      setWidth(window.innerWidth)
-    }
-    window.addEventListener("resize", updateDimensions)
-    return () => window.removeEventListener("resize", updateDimensions)
-  })
+  // useEffect(() => {
+  //   // set width on initial load
+  //   setWidth(window.innerWidth)
+  //   console.log(window.innerWidth)
+  //   // update on screen changes
+  //   const updateDimensions = () => {
+  //     setWidth(window.innerWidth)
+  //   }
+  //   window.addEventListener("resize", updateDimensions)
+  //   return () => window.removeEventListener("resize", updateDimensions)
+  // })
 
   return (
     <BackgroundImage
@@ -39,7 +39,11 @@ const HomePage = ({ data }) => {
       backgroundColor="#FBFBFB"
       backgroundSize="cover"
       backgroundPosition="center"
-      durationFadeIn={1000}
+      // fadeIn="soft"
+      // durationFadeIn={1000}
+      // ref={bgRef}
+      // onStartLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
+      // onLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
     >
       <Layout>
         <Helmet>

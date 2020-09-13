@@ -127,7 +127,7 @@ const ContactsPage = () => {
               </a>
               <p className="contacts-info">
                 <a
-                  className="whatsapp-link"
+                  className="contacts-link"
                   href="https://api.whatsapp.com/send?phone=37126364882"
                 >
                   WhatsApp (sūti foto, uzzini cenu)
@@ -140,7 +140,7 @@ const ContactsPage = () => {
               </a>
               <p className="contacts-info">
                 <a
-                  className="whatsapp-link"
+                  className="contacts-link"
                   href="https://www.facebook.com/solis.tiribai/"
                 >
                   Seko mums Facebook

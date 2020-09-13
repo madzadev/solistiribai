@@ -34,7 +34,7 @@ const ServicesPage = ({ data }) => {
               alt="img"
               backgroundColor="#F4F4F4"
               fadeIn={true}
-              durationFadeIn="1000"
+              durationFadeIn="500"
             />
             <h3 className="services-img-title">{services[index]}</h3>
           </div>
@@ -48,9 +48,11 @@ export const query = graphql`
   {
     allFile(
       filter: { relativePath: {}, relativeDirectory: { eq: "services" } }
+      sort: { fields: name, order: ASC }
     ) {
       edges {
         node {
+          name
           childImageSharp {
             fluid(maxWidth: 600, quality: 100) {
               ...GatsbyImageSharpFluid_noBase64

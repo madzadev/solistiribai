@@ -25,7 +25,7 @@ const QualityPage = ({ data }) => {
                 alt="img"
                 backgroundColor="#F4F4F4"
                 fadeIn={true}
-                durationFadeIn="1000"
+                durationFadeIn="2000"
               />
               {index % 2 === 0 ? <h3>Pirms</h3> : <h3>Pēc</h3>}
             </div>
