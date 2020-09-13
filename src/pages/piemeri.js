@@ -23,6 +23,9 @@ const QualityPage = ({ data }) => {
                 className="quality-img"
                 fluid={el.node.childImageSharp.fluid}
                 alt="img"
+                backgroundColor="#F4F4F4"
+                fadeIn={true}
+                durationFadeIn="1000"
               />
               {index % 2 === 0 ? <h3>Pirms</h3> : <h3>Pēc</h3>}
             </div>
@@ -52,8 +55,7 @@ export const query = graphql`
         node {
           childImageSharp {
             fluid(maxWidth: 600, quality: 100) {
-              ...GatsbyImageSharpFluid
-              ...GatsbyImageSharpFluidLimitPresentationSize
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
@@ -62,8 +64,7 @@ export const query = graphql`
     file(relativePath: { eq: "arrow-right.png" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
-          ...GatsbyImageSharpFluidLimitPresentationSize
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }

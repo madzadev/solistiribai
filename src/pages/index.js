@@ -1,30 +1,13 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
-import { graphql } from "gatsby"
 import Helmet from "react-helmet"
-import BackgroundImage from "gatsby-background-image"
+import { Link, graphql } from "gatsby"
 
-import BackgroundImg from "./../images/444.jpg"
+import BackgroundImage from "gatsby-background-image"
 
 import Layout from "./../components/layout"
 import "./index.scss"
 
 const HomePage = ({ data }) => {
-  // Img load check
-  // const useProgressiveImage = src => {
-  //   const [sourceLoaded, setSourceLoaded] = useState(null)
-
-  //   useEffect(() => {
-  //     const img = new Image()
-  //     img.src = src
-  //     img.onload = () => setSourceLoaded(src)
-  //   }, [src])
-
-  //   return sourceLoaded
-  // }
-
-  // Get screen width, to decide wether to show hero img
-
   const [width, setWidth] = useState(null)
 
   useEffect(() => {
