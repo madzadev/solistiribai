@@ -61,7 +61,7 @@ export const query = graphql`
         }
       }
     }
-    file(relativePath: { eq: "arrow-right.png" }) {
+    file(relativePath: { eq: "arrow.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_noBase64

@@ -8,19 +8,18 @@ import Layout from "./../components/layout"
 import "./index.scss"
 
 const HomePage = ({ data }) => {
-  // const [width, setWidth] = useState(null)
+  const [width, setWidth] = useState(null)
 
-  // useEffect(() => {
-  //   // set width on initial load
-  //   setWidth(window.innerWidth)
-  //   console.log(window.innerWidth)
-  //   // update on screen changes
-  //   const updateDimensions = () => {
-  //     setWidth(window.innerWidth)
-  //   }
-  //   window.addEventListener("resize", updateDimensions)
-  //   return () => window.removeEventListener("resize", updateDimensions)
-  // })
+  useEffect(() => {
+    // set width on initial load
+    setWidth(window.innerWidth)
+    // update on screen changes
+    const updateDimensions = () => {
+      setWidth(window.innerWidth)
+    }
+    window.addEventListener("resize", updateDimensions)
+    return () => window.removeEventListener("resize", updateDimensions)
+  })
 
   return (
     <BackgroundImage
@@ -35,6 +34,7 @@ const HomePage = ({ data }) => {
       //   backgroundRepeat: "no-repeat",
       //   backgroundAttachment: "fixed",
       // }}
+
       fluid={data.file.childImageSharp.fluid}
       backgroundColor="#FBFBFB"
       backgroundSize="cover"
@@ -86,7 +86,7 @@ const HomePage = ({ data }) => {
 
 export const query = graphql`
   {
-    file(relativePath: { eq: "444.jpg" }) {
+    file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 5760, quality: 100) {
           ...GatsbyImageSharpFluid

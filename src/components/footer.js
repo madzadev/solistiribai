@@ -18,7 +18,7 @@ const Footer = () => {
           solis.tiribai@gmail.com
         </a>
       </p>
-      <p>solistiribai.lv, 2020</p>
+      <p>solistiribai.netlify.app, 2020</p>
       {/* <a href="https://api.whatsapp.com/send?phone=37126364882">
         <img className="footer-img" src={Email} alt="img" />
       </a>
