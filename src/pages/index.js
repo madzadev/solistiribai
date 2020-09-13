@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
+import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 import BackgroundImage from "gatsby-background-image"
 
@@ -8,7 +9,7 @@ import BackgroundImg from "./../images/444.jpg"
 import Layout from "./../components/layout"
 import "./index.scss"
 
-const HomePage = () => {
+const HomePage = ({ data }) => {
   // Img load check
   // const useProgressiveImage = src => {
   //   const [sourceLoaded, setSourceLoaded] = useState(null)
@@ -39,18 +40,23 @@ const HomePage = () => {
   })
 
   return (
-    <div
+    <BackgroundImage
       className="hero-wrapper"
-      style={{
-        width: "100%",
-        backgroundColor: `#FBFBFB`,
-        backgroundImage: `url(${width > 540 ? BackgroundImg : ""})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        height: "100%",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
-      }}
+      // style={{
+      //   width: "100%",
+      //   backgroundColor: `#FBFBFB`,
+      //   backgroundImage: `url(${width > 540 ? BackgroundImg : ""})`,
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      //   height: "100%",
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundAttachment: "fixed",
+      // }}
+      fluid={data.file.childImageSharp.fluid}
+      backgroundColor="#FBFBFB"
+      backgroundSize="cover"
+      backgroundPosition="center"
+      durationFadeIn={1000}
     >
       <Layout>
         <Helmet>
@@ -87,8 +93,21 @@ const HomePage = () => {
           Pieteikt tīrīšanu →
         </Link>
       </Layout>
-    </div>
+    </BackgroundImage>
   )
 }
+
+export const query = graphql`
+  {
+    file(relativePath: { eq: "444.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 5760, quality: 100) {
+          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluidLimitPresentationSize
+        }
+      }
+    }
+  }
+`
 
 export default HomePage
