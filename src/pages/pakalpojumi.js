@@ -28,7 +28,6 @@ const ServicesPage = ({ data }) => {
       <div className="services-content">
         {data.allFile.edges.map((el, index) => (
           <div className="services-box">
-            {console.log(el)}
             <Img
               className="services-img"
               fluid={el.node.childImageSharp.fluid}

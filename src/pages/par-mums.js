@@ -90,6 +90,7 @@ const AboutUsPage = () => {
             frameborder="0"
             allowTransparency="true"
             allow="encrypted-media"
+            data-adapt-container-width="true"
           ></iframe>
         </div>
       </div>
