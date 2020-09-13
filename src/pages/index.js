@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import Helmet from "react-helmet"
+import BackgroundImage from "gatsby-background-image"
 
 import BackgroundImg from "./../images/444.jpg"
 

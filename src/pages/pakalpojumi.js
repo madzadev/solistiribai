@@ -27,11 +27,14 @@ const ServicesPage = ({ data }) => {
       <h1 className="services-title">Mūsu pakalpojumi:</h1>
       <div className="services-content">
         {data.allFile.edges.map((el, index) => (
-          <div className="services-box">
+          <div className="services-box" key={index}>
             <Img
               className="services-img"
               fluid={el.node.childImageSharp.fluid}
               alt="img"
+              backgroundColor="#F4F4F4"
+              fadeIn={true}
+              durationFadeIn="1000"
             />
             <h3 className="services-img-title">{services[index]}</h3>
           </div>
@@ -50,7 +53,7 @@ export const query = graphql`
         node {
           childImageSharp {
             fluid(maxWidth: 600, quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
               ...GatsbyImageSharpFluidLimitPresentationSize
             }
           }
