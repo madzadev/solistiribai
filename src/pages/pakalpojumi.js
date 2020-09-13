@@ -26,9 +26,17 @@ const ServicesPage = ({ data }) => {
 
       <h1 className="services-title">Mūsu pakalpojumi:</h1>
       <div className="services-content">
-        {data.allImageSharp.edges.map((edge, index) => (
+        {/* <Img
+          fluid={data.dog.childImageSharp.fluid}
+          alt="This is a picture of my face."
+        /> */}
+        {data.allFile.edges.map((node, index) => (
           <div className="services-box">
-            <Img className="services-img" fluid={edge.node.fluid} alt="img" />
+            {/* <Img
+              className="services-img"
+              fluid={node.childImageSharp.fluid}
+              alt="img"
+            /> */}
             <h3 className="services-img-title">{services[index]}</h3>
           </div>
         ))}
@@ -38,13 +46,16 @@ const ServicesPage = ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    allImageSharp {
+  {
+    allFile(
+      filter: { relativePath: {}, relativeDirectory: { eq: "services" } }
+    ) {
       edges {
         node {
-          id
-          fluid(maxWidth: 600, quality: 100) {
-            ...GatsbyImageSharpFluid
+          childImageSharp {
+            fluid(maxWidth: 600, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
