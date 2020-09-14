@@ -57,9 +57,11 @@ export const query = graphql`
   {
     allFile(
       filter: { relativePath: {}, relativeDirectory: { eq: "quality" } }
+      sort: { fields: [base] }
     ) {
       edges {
         node {
+          base
           childImageSharp {
             fluid(maxWidth: 600, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
