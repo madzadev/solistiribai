@@ -9,13 +9,12 @@ import "./cenas.scss"
 const PricesPage = () => {
   return (
     <Layout>
-      {<SEO title="Cenas" />}
-      {/* <Helmet>
-        <html lang="lv" />
-        <title>Cenas | Solis Tīrībai</title>
-        <description>Apraksts</description>
-      </Helmet> */}
-
+      {
+        <SEO
+          title="Cenas | Solis Tīrībai"
+          description="Tīrīšanas un uzkopšanas pakalpojumi, Mēbeļu, paklāju ķīmiskā tīrīšana"
+        />
+      }
       <h1 className="prices-title">Mūsu izcenojumi:</h1>
       <div className="prices-content">
         <div className="prices-card-box">

@@ -5,12 +5,9 @@ function SEO(props) {
   return (
     <Helmet>
       <html lang="lv" />
-      <title>{props.title} | Solis Tīrībai</title>
-      <meta name="title" content="Solis Tīrībai" />
-      <meta
-        name="description"
-        content="Tīrīšanas un uzkopšanas pakalpojumi, Mēbeļu, paklāju ķīmiskā tīrīšana"
-      />
+      <title>{props.title}</title>
+      <meta name="title" content={props.title} />
+      <meta name="description" content={props.description} />
 
       {/* <!-- Open Graph / Facebook --> */}
       <meta property="og:type" content="website" />
@@ -20,7 +17,7 @@ function SEO(props) {
         property="og:description"
         content="Tīrīšanas un uzkopšanas pakalpojumi, Mēbeļu, paklāju ķīmiskā tīrīšana"
       />
-      <meta property="og:image" content="/src/images/navbar/media-card.jpg" />
+      <meta property="og:image" content="/static/media-card.jpg" />
 
       {/* <!-- Twitter --> */}
       <meta property="twitter:card" content="summary_large_image" />
@@ -33,10 +30,7 @@ function SEO(props) {
         property="twitter:description"
         content="Tīrīšanas un uzkopšanas pakalpojumi, Mēbeļu, paklāju ķīmiskā tīrīšana"
       />
-      <meta
-        property="twitter:image"
-        content="/src/images/navbar/media-card.jpg"
-      />
+      <meta property="twitter:image" content="/static/media-card.jpg" />
     </Helmet>
   )
 }

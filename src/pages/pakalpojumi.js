@@ -19,7 +19,12 @@ const ServicesPage = ({ data }) => {
 
   return (
     <Layout>
-      {<SEO title="Pakalpojumi" />}
+      {
+        <SEO
+          title="Pakalpojumi | Solis Tīrībai"
+          description="Tīrīšanas un uzkopšanas pakalpojumi, Mēbeļu, paklāju ķīmiskā tīrīšana"
+        />
+      }
       {/* <Helmet>
         <html lang="lv" />
         <title>Pakalpojumi | Solis Tīrībai</title>

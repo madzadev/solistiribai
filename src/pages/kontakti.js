@@ -95,7 +95,12 @@ const ContactsPage = () => {
 
   return (
     <Layout>
-      {<SEO title="Kontakti" />}
+      {
+        <SEO
+          title="Kontakti | Solis Tīrībai"
+          description="Tīrīšanas un uzkopšanas pakalpojumi, Mēbeļu, paklāju ķīmiskā tīrīšana"
+        />
+      }
       {/* <Helmet>
         <html lang="lv" />
         <title>Kontakti | Solis Tīrībai</title>

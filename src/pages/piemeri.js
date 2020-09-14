@@ -10,7 +10,12 @@ import "./piemeri.scss"
 const QualityPage = ({ data }) => {
   return (
     <Layout>
-      {<SEO title="Piemēri" />}
+      {
+        <SEO
+          title="Piemēri | Solis Tīrībai"
+          description="Tīrīšanas un uzkopšanas pakalpojumi, Mēbeļu, paklāju ķīmiskā tīrīšana"
+        />
+      }
       {/* <Helmet>
         <html lang="lv" />
         <title>Piemēri | Solis Tīrībai</title>

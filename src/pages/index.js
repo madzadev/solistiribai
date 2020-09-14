@@ -47,7 +47,12 @@ const HomePage = ({ data }) => {
       // onLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
     >
       <Layout>
-        {<SEO title="Sākums" />}
+        {
+          <SEO
+            title="Solis Tīrībai"
+            description="Tīrīšanas un uzkopšanas pakalpojumi, Mēbeļu, paklāju ķīmiskā tīrīšana"
+          />
+        }
         {/* <Helmet>
           <html lang="lv" />
           <title>Sākums | Solis Tīrībai</title>
