@@ -55,7 +55,7 @@ export const query = graphql`
         node {
           childImageSharp {
             fluid(maxWidth: 600, quality: 100) {
-              ...GatsbyImageSharpFluid_noBase64
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
@@ -64,7 +64,7 @@ export const query = graphql`
     file(relativePath: { eq: "arrow.png" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }

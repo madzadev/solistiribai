@@ -48,14 +48,13 @@ export const query = graphql`
   {
     allFile(
       filter: { relativePath: {}, relativeDirectory: { eq: "services" } }
-      sort: { fields: name, order: ASC }
     ) {
       edges {
         node {
           name
           childImageSharp {
             fluid(maxWidth: 600, quality: 100) {
-              ...GatsbyImageSharpFluid_noBase64
+              ...GatsbyImageSharpFluid_withWebp_noBase64
               ...GatsbyImageSharpFluidLimitPresentationSize
             }
           }
