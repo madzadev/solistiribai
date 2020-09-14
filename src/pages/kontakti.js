@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Helmet from "react-helmet"
 import axios from "axios"
 
+import SEO from "./../components/seo"
 import Layout from "./../components/layout"
 import "./kontakti.scss"
 
@@ -94,11 +95,12 @@ const ContactsPage = () => {
 
   return (
     <Layout>
-      <Helmet>
+      {<SEO title="Kontakti" />}
+      {/* <Helmet>
         <html lang="lv" />
         <title>Kontakti | Solis Tīrībai</title>
         <description>Apraksts</description>
-      </Helmet>
+      </Helmet> */}
 
       <div className="contacts-content">
         <div>

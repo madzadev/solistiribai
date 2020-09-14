@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useState } from "react"
 import Helmet from "react-helmet"
 
+import SEO from "./../components/seo"
 import Layout from "../components/layout"
 import "./par-mums.scss"
 import Tick from "./../images/tick.png"

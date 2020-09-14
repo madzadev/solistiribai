@@ -2,17 +2,19 @@ import React from "react"
 import Helmet from "react-helmet"
 import { Link } from "gatsby"
 
+import SEO from "./../components/seo"
 import Layout from "./../components/layout"
 import "./cenas.scss"
 
 const PricesPage = () => {
   return (
     <Layout>
-      <Helmet>
+      {<SEO title="Cenas" />}
+      {/* <Helmet>
         <html lang="lv" />
         <title>Cenas | Solis Tīrībai</title>
         <description>Apraksts</description>
-      </Helmet>
+      </Helmet> */}
 
       <h1 className="prices-title">Mūsu izcenojumi:</h1>
       <div className="prices-content">

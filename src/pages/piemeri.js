@@ -3,17 +3,19 @@ import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import SEO from "./../components/seo"
 import Layout from "../components/layout"
 import "./piemeri.scss"
 
 const QualityPage = ({ data }) => {
   return (
     <Layout>
-      <Helmet>
+      {<SEO title="Piemēri" />}
+      {/* <Helmet>
         <html lang="lv" />
         <title>Piemēri | Solis Tīrībai</title>
         <description>Apraksts</description>
-      </Helmet>
+      </Helmet> */}
       <h1 className="quality-title">Paveiktie darbi:</h1>
       <div className="gallery-content">
         {data.allFile.edges.map((el, index) => (

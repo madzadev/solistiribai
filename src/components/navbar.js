@@ -15,6 +15,7 @@ const NavBar = () => {
   return (
     <nav className="navbar-wrapper">
       <Link
+        rel="canonical"
         style={{ float: "left", textDecoration: "none" }}
         className="navbar-logo"
         to="/"

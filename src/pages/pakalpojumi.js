@@ -3,6 +3,7 @@ import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import SEO from "./../components/seo"
 import Layout from "../components/layout"
 import "./pakalpojumi.scss"
 
@@ -18,11 +19,12 @@ const ServicesPage = ({ data }) => {
 
   return (
     <Layout>
-      <Helmet>
+      {<SEO title="Pakalpojumi" />}
+      {/* <Helmet>
         <html lang="lv" />
         <title>Pakalpojumi | Solis Tīrībai</title>
         <description>Apraksts</description>
-      </Helmet>
+      </Helmet> */}
 
       <h1 className="services-title">Mūsu pakalpojumi:</h1>
       <div className="services-content">

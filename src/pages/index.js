@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 
 import BackgroundImage from "gatsby-background-image"
 
+import SEO from "./../components/seo"
 import Layout from "./../components/layout"
 import "./index.scss"
 
@@ -46,11 +47,12 @@ const HomePage = ({ data }) => {
       // onLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
     >
       <Layout>
-        <Helmet>
+        {<SEO title="Sākums" />}
+        {/* <Helmet>
           <html lang="lv" />
           <title>Sākums | Solis Tīrībai</title>
           <description>Apraksts</description>
-        </Helmet>
+        </Helmet> */}
 
         <div className="hero-content">
           <div>
