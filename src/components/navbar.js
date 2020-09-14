@@ -37,13 +37,6 @@ const NavBar = () => {
           </span>
         </div>
       </Link>
-      {/* <span>
-        <p>📞 Tel. (+371) 26 364 882</p>
-        <p>
-          📧 E-pasts:
-          <a href="mailto: solis.tiribai@gmail.com">solis.tiribai@gmail.com</a>
-        </p>
-      </span> */}
       <div className={openState ? "navbar-link-wrapper" : ""}>
         <Link
           to="#"

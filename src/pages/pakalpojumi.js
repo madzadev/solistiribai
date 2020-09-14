@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -25,12 +24,6 @@ const ServicesPage = ({ data }) => {
           description="Tīrīšanas un uzkopšanas pakalpojumi, Mēbeļu, paklāju ķīmiskā tīrīšana"
         />
       }
-      {/* <Helmet>
-        <html lang="lv" />
-        <title>Pakalpojumi | Solis Tīrībai</title>
-        <description>Apraksts</description>
-      </Helmet> */}
-
       <h1 className="services-title">Mūsu pakalpojumi:</h1>
       <div className="services-content">
         {data.allFile.edges.map((el, index) => (

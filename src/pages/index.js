@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import Helmet from "react-helmet"
 import { Link, graphql } from "gatsby"
 
 import BackgroundImage from "gatsby-background-image"
@@ -25,26 +24,10 @@ const HomePage = ({ data }) => {
   return (
     <BackgroundImage
       className="hero-wrapper"
-      // style={{
-      //   width: "100%",
-      //   backgroundColor: `#FBFBFB`,
-      //   backgroundImage: `url(${width > 540 ? BackgroundImg : ""})`,
-      //   backgroundSize: "cover",
-      //   backgroundPosition: "center",
-      //   height: "100%",
-      //   backgroundRepeat: "no-repeat",
-      //   backgroundAttachment: "fixed",
-      // }}
-
       fluid={data.file.childImageSharp.fluid}
       backgroundColor="#FBFBFB"
       backgroundSize="cover"
       backgroundPosition="center"
-      // fadeIn="soft"
-      // durationFadeIn={1000}
-      // ref={bgRef}
-      // onStartLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
-      // onLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
     >
       <Layout>
         {
@@ -53,12 +36,6 @@ const HomePage = ({ data }) => {
             description="Tīrīšanas un uzkopšanas pakalpojumi, Mēbeļu, paklāju ķīmiskā tīrīšana"
           />
         }
-        {/* <Helmet>
-          <html lang="lv" />
-          <title>Sākums | Solis Tīrībai</title>
-          <description>Apraksts</description>
-        </Helmet> */}
-
         <div className="hero-content">
           <div>
             <h1 className="hero-title">

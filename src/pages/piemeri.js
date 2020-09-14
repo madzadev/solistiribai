@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -16,11 +15,6 @@ const QualityPage = ({ data }) => {
           description="Tīrīšanas un uzkopšanas pakalpojumi, Mēbeļu, paklāju ķīmiskā tīrīšana"
         />
       }
-      {/* <Helmet>
-        <html lang="lv" />
-        <title>Piemēri | Solis Tīrībai</title>
-        <description>Apraksts</description>
-      </Helmet> */}
       <h1 className="quality-title">Paveiktie darbi:</h1>
       <div className="gallery-content">
         {data.allFile.edges.map((el, index) => (

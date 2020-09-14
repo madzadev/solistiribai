@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import Helmet from "react-helmet"
 import axios from "axios"
 
 import SEO from "./../components/seo"
@@ -101,12 +100,6 @@ const ContactsPage = () => {
           description="Tīrīšanas un uzkopšanas pakalpojumi, Mēbeļu, paklāju ķīmiskā tīrīšana"
         />
       }
-      {/* <Helmet>
-        <html lang="lv" />
-        <title>Kontakti | Solis Tīrībai</title>
-        <description>Apraksts</description>
-      </Helmet> */}
-
       <div className="contacts-content">
         <div>
           <h1 className="contacts-title">Mūsu kontakti</h1>
