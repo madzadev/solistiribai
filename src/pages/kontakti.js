@@ -5,8 +5,8 @@ import SEO from "./../components/seo"
 import Layout from "./../components/layout"
 import "./kontakti.scss"
 
-import WhatsApp from "./../images/contacts/whatsapp.png"
-import Facebook from "./../images/contacts/facebook.png"
+import WhatsApp from "./../images/icons/whatsapp.png"
+import Facebook from "./../images/icons/facebook.png"
 
 import validateContactInput from "./../validation/validator.js"
 

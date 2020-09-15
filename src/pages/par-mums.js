@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import SEO from "./../components/seo"
 import Layout from "../components/layout"
 import "./par-mums.scss"
-import Tick from "./../images/tick.png"
+import Tick from "./../images/icons/tick.png"
 
 const AboutUsPage = () => {
   const [size, setSize] = useState([0, 0])
