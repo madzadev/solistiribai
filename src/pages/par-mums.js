@@ -1,23 +1,11 @@
-import React, { useLayoutEffect, useState } from "react"
+import React from "react"
 import Helmet from "react-helmet"
 
-import SEO from "./../components/seo"
 import Layout from "../components/layout"
 import "./par-mums.scss"
 import Tick from "./../images/icons/tick.png"
 
 const AboutUsPage = () => {
-  const [size, setSize] = useState([0, 0])
-  useLayoutEffect(() => {
-    function updateSize() {
-      setSize([window.innerWidth, window.innerHeight])
-    }
-    window.addEventListener("resize", updateSize)
-    updateSize()
-    return () => window.removeEventListener("resize", updateSize)
-  }, [])
-
-  console.log(size[0])
   return (
     <Layout>
       <Helmet>
@@ -61,8 +49,7 @@ const AboutUsPage = () => {
         </div>
         <div className="about-image">
           <iframe
-            id="aa"
-            className="www"
+            title="iframe"
             src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fineta.dzerina1%2Fposts%2F1767488250055287&show_text=true&width=552&appId=620075488933384&height=175"
             style={{
               border: "none",
@@ -80,6 +67,7 @@ const AboutUsPage = () => {
           <br />
           <br />
           <iframe
+            title="iframe"
             src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fanita.ozolina.37454%2Fposts%2F159073862008658&show_text=true&width=552&appId=620075488933384&height=137"
             style={{
               border: "none",
@@ -100,7 +88,7 @@ const AboutUsPage = () => {
 
       <h1 className="about-title">Solis Tīrībai klienti:</h1>
 
-      <p>
+      <p className="about-clients-list">
         🔸 Privātpersonas 🔸 Restorāni 🔸 Banketu zāles 🔸 Internātskolas 🔸
         Skolas 🔸 Frizētavas 🔸 Skaistumkopšanas saloni 🔸 Fitnesa centri 🔸
         Autoservisi 🔸 Viesnīcas 🔸 Bērnudārzi 🔸 Viesu nami 🔸 u.c.

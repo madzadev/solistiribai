@@ -11,9 +11,6 @@
 
 .prices-card-box {
   text-align: center;
-  // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.07),
-  //   0 1px 2px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.07),
-  //   0 1px 2px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 
 .prices-card-title {
@@ -45,11 +42,10 @@
 
 .prices-notes-box {
   padding: 10px;
-  // background-color: rgb(222, 252, 152);
-  // background-color: #ffecb6;
-  // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.07),
-  //   0 1px 2px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.07),
-  //   0 1px 2px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+.prices-notes {
+  font-weight: bold;
 }
 
 .prices-notes a {

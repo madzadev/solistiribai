@@ -1,8 +1,8 @@
 {
-  "name": "solis-tiribai-conf-json",
+  "name": "solis-tiribai",
   "private": true,
   "description": "Solis Tīrībai ir mājaslapa tīrīšanas un uzkopšanas pakalpojumiem",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
@@ -11,8 +11,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "preload-fonts": "gatsby-preload-fonts"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
     "axios": "^0.20.0",

@@ -1,14 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap");
+
 .hero-wrapper {
   width: 100%;
-  // background-image: url("./../images/4.jpg");
   background-size: cover;
   background-position: center;
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap");
 
 .hero-content {
   display: grid;
@@ -44,9 +43,6 @@
   margin-top: 40px;
   transition: transform 0.2s;
   font-weight: 500;
-  // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.07),
-  //   0 1px 2px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.07),
-  //   0 1px 2px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 
 .hero-btn:hover {
@@ -54,7 +50,7 @@
   color: white;
   transform: scale(1.01);
 }
-//! Edit this
+
 .first {
   background-color: white;
   color: rgb(51, 51, 51);
@@ -65,7 +61,6 @@
 .first:hover {
   background-color: rgb(248, 248, 248);
   color: black;
-  // border: 1px solid #20bf55;
 }
 
 .hero-img {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { Link, graphql } from "gatsby"
 
 import BackgroundImage from "gatsby-background-image"
@@ -8,19 +8,6 @@ import Layout from "./../components/layout"
 import "./index.scss"
 
 const HomePage = ({ data }) => {
-  const [width, setWidth] = useState(null)
-
-  useEffect(() => {
-    // set width on initial load
-    setWidth(window.innerWidth)
-    // update on screen changes
-    const updateDimensions = () => {
-      setWidth(window.innerWidth)
-    }
-    window.addEventListener("resize", updateDimensions)
-    return () => window.removeEventListener("resize", updateDimensions)
-  })
-
   return (
     <BackgroundImage
       className="hero-wrapper"
