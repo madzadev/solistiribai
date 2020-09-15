@@ -17,15 +17,15 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://www.solistiribai.netlify.app`,
     title: `Solis Tīrībai`,
-    description: `Dažāda veida tīrīšanas pakalpojumi`,
+    description: `Ķīmiskā tīrīšana un dažāda veida uzkopšanas pakalpojumi`,
     author: `Madza`,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `Solis Tīrībai`,
+        short_name: `Solis Tīrībai`,
         start_url: `/`,
         background_color: `#6b37bf`,
         theme_color: `#6b37bf`,
@@ -62,7 +62,6 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-source-filesystem`,
       options: { path: `./src/images` },

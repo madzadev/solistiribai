@@ -8,7 +8,7 @@ import Facebook from "./../images/contacts/facebook.png"
 const Footer = () => {
   return (
     <div className="footer-wrapper">
-      <p>
+      {/* <p>
         Tel.{" "}
         <a className="contacts-link" href="tel:+37126364882">
           (+371) 26 364 882
@@ -18,8 +18,8 @@ const Footer = () => {
           solis.tiribai@gmail.com
         </a>
       </p>
-      <p>solistiribai.netlify.app, 2020</p>
-      {/* <a href="https://api.whatsapp.com/send?phone=37126364882">
+      <p>solistiribai.netlify.app, 2020</p> */}
+      <a href="https://api.whatsapp.com/send?phone=37126364882">
         <img className="footer-img" src={Email} alt="img" />
       </a>
       <a href="https://api.whatsapp.com/send?phone=37126364882">
@@ -31,7 +31,7 @@ const Footer = () => {
       <a href="https://api.whatsapp.com/send?phone=37126364882">
         <img className="footer-img" src={Facebook} alt="img" />
       </a>
-      <p>Solis Tīrībai, 2020</p> */}
+      {/* <p>Solis Tīrībai, 2020</p> */}
     </div>
   )
 }
