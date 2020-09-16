@@ -14,7 +14,7 @@ const Footer = () => {
           solis.tiribai@gmail.com
         </a>
       </p>
-      <p>solistiribai.netlify.app, 2020</p>
+      <p>solistiribai.lv, 2020</p>
     </div>
   )
 }
