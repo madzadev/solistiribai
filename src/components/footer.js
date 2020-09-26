@@ -2,6 +2,7 @@ import React from "react"
 import "./footer.scss"
 
 const Footer = () => {
+  const getYear = () => new Date().getFullYear()
   return (
     <div className="footer-wrapper">
       <p>
@@ -14,7 +15,7 @@ const Footer = () => {
           solis.tiribai@gmail.com
         </a>
       </p>
-      <p>solistiribai.lv, 2020</p>
+      <p>solistiribai.lv, {getYear()}</p>
     </div>
   )
 }
