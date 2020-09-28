@@ -27,6 +27,7 @@ module.exports = {
         icon: `src/images/navbar/logo.png`,
       },
     },
+    ,
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {

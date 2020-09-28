@@ -50,7 +50,7 @@ const AboutUsPage = () => {
         <div className="about-image">
           <iframe
             title="iframe"
-            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fineta.dzerina1%2Fposts%2F1767488250055287&show_text=true&width=552&appId=620075488933384&height=175"
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fanna.racenaja%2Fposts%2F10157588477866765&show_text=true&width=552&appId=620075488933384&height=175"
             style={{
               border: "none",
               overflow: "hidden",
@@ -68,7 +68,7 @@ const AboutUsPage = () => {
           <br />
           <iframe
             title="iframe"
-            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fanita.ozolina.37454%2Fposts%2F159073862008658&show_text=true&width=552&appId=620075488933384&height=137"
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fanita.sornikova%2Fposts%2F668371253802675&show_text=true&width=552&appId=620075488933384&height=194"
             style={{
               border: "none",
               overflow: "hidden",
