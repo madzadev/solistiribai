@@ -27,9 +27,8 @@ module.exports = {
         icon: `src/images/navbar/logo.png`,
       },
     },
-    ,
     {
-      resolve: "gatsby-plugin-robots-txt",
+      resolve: `gatsby-plugin-robots-txt`,
       options: {
         resolveEnv: () => NETLIFY_ENV,
         env: {
