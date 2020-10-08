@@ -33,6 +33,15 @@
   text-align: center;
 }
 
+.about-link {
+  text-decoration: none;
+  color: rgb(6, 43, 163);
+}
+
+.about-link:hover {
+  color: rgb(75, 114, 240);
+}
+
 @media screen and (max-width: 635px) {
   iframe {
     width: 100% !important;

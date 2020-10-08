@@ -81,12 +81,15 @@ const AboutUsPage = () => {
             allow="encrypted-media"
             data-adapt-container-width="true"
           ></iframe>
-          <div style={{ contentAlign: "right" }}>
-            <h3 style={{ marginTop: "20px" }}>
-              <a href="https://www.facebook.com/solis.tiribai/reviews/?ref=page_internal">
-                Lasīt pārējās atsauksmes
+          <div style={{ display: "flex", justifyContent: "flex-end" }}>
+            <p style={{ marginTop: "20px" }}>
+              <a
+                className="about-link"
+                href="https://www.facebook.com/solis.tiribai/reviews/?ref=page_internal"
+              >
+                Lasīt pārējās atsauksmes →
               </a>
-            </h3>
+            </p>
           </div>
         </div>
       </div>
