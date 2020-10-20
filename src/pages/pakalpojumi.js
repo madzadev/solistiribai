@@ -14,6 +14,7 @@ const ServicesPage = ({ data }) => {
     "Matraču tīrīšana",
     "Auto sēdekļu tīrīšana",
     "Tīrīšanas uz uzkopšanas pakalpojumi",
+    "Grīdu ģenerāltīrīšana un vaskošana"
   ]
 
   return (

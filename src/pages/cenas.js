@@ -38,6 +38,20 @@ const PricesPage = () => {
           <h1 className="prices-card-amount">1.50€ - 6€</h1>
           <h1 className="prices-card-description">par m2</h1>
         </div>
+        <div className="prices-card-box">
+          <h3 className="prices-card-title">
+          Grīdas seguma ģenerāltīrīšana*
+          </h3>
+          <h1 className="prices-card-amount">0.65€ - 1.60€</h1>
+          <h1 className="prices-card-description">par m2</h1>
+        </div>
+        <div className="prices-card-box">
+          <h3 className="prices-card-title">
+          Grīdu vaskošana*
+          </h3>
+          <h1 className="prices-card-amount">2.00€ - 4.00€</h1>
+          <h1 className="prices-card-description">par m2</h1>
+        </div>
       </div>
 
       <br />
